@@ -8,8 +8,8 @@ public class Variable {
         float cpu = 3.50F;
         double virtualMemory = 14.7;
         char logicalProc = '8';
-        boolean cdromYes = true;
-        boolean cdromNo = false;
+        boolean cdRomYES = true;
+        boolean cdRomNO = false;
 
         System.out.println ("Operating system: " + osName);
         System.out.println ("IntelCore: " + intelCore);
