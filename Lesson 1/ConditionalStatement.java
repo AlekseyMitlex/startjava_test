@@ -1,32 +1,31 @@
-public class ConditionalStatement{
+public class ConditionalStatement {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-    int vozrast = 40;
-    boolean polMuzh = true;
-    double rost = 1.83;
-    char is1Bukva = 'A';
-
-        if(vozrast > 20) {
+        int age = 40;
+        if(age > 20) {
             System.out.println("Возраст верен");
         }
 
-        if (polMuzh = true) {
+        boolean maleGender = true;
+        if (maleGender) {
             System.out.println("Пол муской");
         }
-        if (polMuzh != false) {
+        if (!maleGender) {
             System.out.println("Пол женский");
         }
         
-        if (rost < 1.80) {
+        double height = 1.83;
+        if (height < 1.80) {
             System.out.println("карлик");
         } else {
             System.out.println("Я не карлик");
         }
 
-        if (is1Bukva == 'M') {
+        char firstLetter = 'A';
+        if (firstLetter == 'M') {
             System.out.println("Моё имя Майкл");
-        } else if (is1Bukva == 'И'){
+        } else if (firstLetter == 'И') {
             System.out.println("Моё имя  не Майкл");
         } else {
             System.out.println("Моё имя Алексей");
