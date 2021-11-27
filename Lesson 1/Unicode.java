@@ -1,12 +1,12 @@
 public class Unicode {
 
     public static void main(String[] args) {
-        char theFirstNumber = 'Ⓐ'; //  [9398, 10178].
-        char theLastNumber = '⟂';  
+        char startRange = 'Ⓐ'; //  [9398, 10178].
+        char endRange = '⟂';  
 
-        while (theFirstNumber <= theLastNumber) {
-            System.out.println(theFirstNumber + " символы кодировки Unicode");
-            theFirstNumber++;
+        while (startRange <= endRange) {
+            System.out.println(startRange + " символы кодировки Unicode");
+            startRange++;
         }
     }  
 }
