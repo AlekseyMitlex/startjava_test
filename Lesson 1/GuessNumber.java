@@ -13,7 +13,7 @@ public class GuessNumber {
             user--;
         }
         if (user == number)  {
-            System.out.println("Поздравляю, число угадано! " + user);
+            System.out.println("Поздравляю, число угадано!!! " + user);
         }
     }
 }
