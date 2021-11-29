@@ -5,7 +5,7 @@ public class Unicode {
         char endRange = '⟂';  
 
         while (startRange <= endRange) {
-            System.out.println(startRange + " символы кодировки Unicode");
+            System.out.print(startRange);
             startRange++;
         }
     }  
