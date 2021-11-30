@@ -28,6 +28,4 @@ public class Wolf {
         System.out.println("Делать нечего, пойду на охоту!!!\n");
         return true;
     }
-
-
 }
