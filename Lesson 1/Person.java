@@ -3,7 +3,7 @@ public class  Person {
     String  pol = "Man";
     String name = "Ivan";
     float height = 1.80F;
-    float weight = 85;
+    float weight = 85F;
     byte age = 27;
 
     void move() {
