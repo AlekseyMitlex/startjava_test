@@ -3,11 +3,11 @@ public class WolfTest {
     public static void main(String[] args) {
         Wolf wolf = new Wolf();
 
-        wolf.pol = "кабелёк";
-        wolf.nickname = "Кусатыч";
-        wolf.weight = 35F;
-        wolf.age = 3;
-        wolf.color = "серый";
+        wolf.setPol("кабелёк");
+        wolf.setNickname("Кусатыч");
+        wolf.setWeight(35F);
+        wolf.setAge(9);
+        wolf.setColor("серый");
 
         wolf.move();
         System.out.println(wolf.isSit());
@@ -15,8 +15,8 @@ public class WolfTest {
         System.out.println(wolf.howl());
         System.out.println(wolf.isHunt());
 
-        System.out.println("Пол волка :" + wolf.pol + "\n" + "Кличка волка: " + wolf.nickname + "\n"
-                + "Вес волка: " + wolf.weight + "\n" + "Возраст волка: " + wolf.age + " года" + "\n" 
-                + "Окрас волка: " + wolf.color);    
+        System.out.println("Пол волка :" + wolf.getPol() + "\n" + "Кличка волка: " + wolf.getNickname() + "\n"
+                + "Вес волка: " + wolf.getWeight() + "\n" + "Возраст волка: " + wolf.getAge() + " лет" + "\n"
+                + "Окрас волка: " + wolf.getColor());
     }
 }
