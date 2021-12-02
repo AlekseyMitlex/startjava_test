@@ -16,7 +16,7 @@ public class WolfTest {
         System.out.println(wolf.isHunt());
 
         System.out.println("Пол волка :" + wolf.getPol() + "\n" + "Кличка волка: " + wolf.getNickname() + "\n"
-                + "Вес волка: " + wolf.getWeight() + "\n" + "Возраст волка: " + wolf.getAge() + "  лет" + "\n"
+                + "Вес волка: " + wolf.getWeight() + "\n" + "Возраст волка: " + wolf.getAge() + " лет" + "\n"
                 + "Окрас волка: " + wolf.getColor());
     }
 }
