@@ -3,42 +3,33 @@ import java.util.Scanner;
 public class CalculatorTest {
 
     public static void main(String[] args) {
+        int x = 0;
 
-        Calculator object = new Calculator();
+        while (x == 0) {
 
-        Scanner scanner = new Scanner(System.in);
+            Calculator calc = new Calculator();
 
-        System.out.println("Введите первое число:");
-        object.setFirstNumber(scanner.nextInt());
-        System.out.println("Введите +, -, *, /, %, ^");
-        object.setSign(scanner.next().charAt(0));
-        System.out.println("Введите второе число:");
-        object.setSecondNumber(scanner.nextInt());
+            Scanner scanner = new Scanner(System.in);
 
-        object.mathSign();
+            System.out.println("Введите первое число:");
+            calc.setFirstNumber(scanner.nextInt());
+            System.out.println("Введите +, -, *, /, %, ^");
+            calc.setSign(scanner.next().charAt(0));
+            System.out.println("Введите второе число:");
+            calc.setSecondNumber(scanner.nextInt());
 
-        outer:
-        while (true) {
+            calc.countCalculator();
 
             System.out.println("Хотите продолжить вычисления? [yes/no]:");
 
+            scanner.nextLine();
+
             switch (scanner.nextLine()) {
                 case "yes":
-                    System.out.println("Введите первое число:");
-                    object.setFirstNumber(scanner.nextInt());
-                    System.out.println("Введите +, -, *, /, %, ^");
-                    object.setSign(scanner.next().charAt(0));
-                    System.out.println("Введите второе число:");
-                    object.setSecondNumber(scanner.nextInt());
-
-                    object.mathSign();
+                    break;
                 case "no":
-                    if (scanner.nextLine() == "no") {
-                        break outer;
-                    }
+                    x++;
                     System.out.println("The End");
-                    break outer;
-
             }
         }
     }

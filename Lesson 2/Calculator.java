@@ -5,32 +5,21 @@ class Calculator {
     private int firstNumber;
     private int secondNumber;
     private char sign;
-
-    public int getFirstNumber() {
-        return firstNumber;
-    }
-
+    
     public void setFirstNumber(int firstNumber) {
         this.firstNumber = firstNumber;
-    }
-
-    public int getSecondNumber() {
-        return secondNumber;
     }
 
     public void setSecondNumber(int secondNumber) {
         this.secondNumber = secondNumber;
     }
 
-    public char getSign() {
-        return sign;
-    }
-
     public void setSign(char sign) {
         this.sign = sign;
     }
+    
 
-    public void mathSign() {
+    public void countCalculator() {
         switch (sign) {
             case '+':
                 System.out.println(firstNumber + secondNumber);
