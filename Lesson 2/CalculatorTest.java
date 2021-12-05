@@ -2,10 +2,11 @@ import java.util.Scanner;
 
 public class CalculatorTest {
 
-    public static void main(String[] args) {
-        int x = 0;
+    static String answerPlayer;
 
-        while (x == 0) {
+    public static void main(String[] args) {
+
+        while (!"no".equals(answerPlayer)) {
 
             Calculator calc = new Calculator();
 
@@ -20,16 +21,14 @@ public class CalculatorTest {
 
             calc.countCalculator();
 
-            System.out.println("Хотите продолжить вычисления? [yes/no]:");
+            answerPlayer = null;
 
-            scanner.nextLine();
-
-            switch (scanner.nextLine()) {
-                case "yes":
-                    break;
-                case "no":
-                    x++;
-                    System.out.println("The End");
+            while (!"yes".equals(answerPlayer) & !"no".equals(answerPlayer)) {
+                System.out.println("Хотите продолжить вычисления? [yes/no]");
+                answerPlayer = scanner.nextLine();
+                if (!"no".equals(answerPlayer)) {
+                    answerPlayer = scanner.nextLine();
+                }
             }
         }
     }
