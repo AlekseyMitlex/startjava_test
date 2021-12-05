@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 class Calculator {
 
     private int firstNumber;
@@ -19,7 +17,7 @@ class Calculator {
     }
     
 
-    public void countCalculator() {
+    public void calculator() {
         switch (sign) {
             case '+':
                 System.out.println(firstNumber + secondNumber);

@@ -2,12 +2,9 @@ import java.util.Scanner;
 
 public class CalculatorTest {
 
-    static String answerPlayer;
-
     public static void main(String[] args) {
-
+        String answerPlayer = "yes";
         while (!"no".equals(answerPlayer)) {
-
             Calculator calc = new Calculator();
 
             Scanner scanner = new Scanner(System.in);
@@ -19,17 +16,14 @@ public class CalculatorTest {
             System.out.println("Введите второе число:");
             calc.setSecondNumber(scanner.nextInt());
 
-            calc.countCalculator();
+            calc.calculator();
 
-            answerPlayer = null;
-
-            while (!"yes".equals(answerPlayer) & !"no".equals(answerPlayer)) {
+            do {
                 System.out.println("Хотите продолжить вычисления? [yes/no]");
                 answerPlayer = scanner.nextLine();
-                if (!"no".equals(answerPlayer)) {
-                    answerPlayer = scanner.nextLine();
-                }
-            }
+            } while (!"yes".equals(answerPlayer) && !"no".equals(answerPlayer));
+
         }
+
     }
 }
