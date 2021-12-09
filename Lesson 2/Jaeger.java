@@ -9,6 +9,14 @@ public class Jaeger {
     private int strength;
     private int armor;
 
+    @Override
+    public String toString() {
+        return "Имя :" + modelName + "\n" + "Модель: " + mark + "\n"
+                + "Производитель: " + origin + "\n" + "Высота: " + height + "\n"
+                + "Вес: " + weight + "\n" + "Скорость: " + speed + "\n" + "Сила: " + strength + "\n"
+                + "Броня: " + armor + "\n";
+    }
+
     public String getModelName() {
         return modelName;
     }
