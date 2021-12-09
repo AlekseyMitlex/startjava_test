@@ -13,12 +13,15 @@ public class GuessNumber {
     public GuessNumber(Player player1, Player player2) {
         this.player1 = player1;
         this.player2 = player2;
-        
+
+    }
+
+    public void inputNumber(Player player) {
+        System.out.println("Число от " + player.getName());
+        player.setNumber(scanner.nextInt());
     }
 
     public void guess(Player player) {
-        System.out.println("Число от " + player.getName());
-        player.setNumber(scanner.nextInt());
         if (player.getNumber() == secretNumber) {
             System.out.println("Победил " + player.getName() + " !!! Число  - " + secretNumber);
             isVictory = true;
@@ -31,6 +34,8 @@ public class GuessNumber {
 
     public void play() {
         do {
+            inputNumber(player1);
+            inputNumber(player2);
             guess(player1);
             guess(player2);
         } while (!isVictory);
