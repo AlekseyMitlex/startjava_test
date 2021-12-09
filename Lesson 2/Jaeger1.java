@@ -69,4 +69,12 @@ public class Jaeger1 {
     public void attack() {
         System.out.println("Вы выстрелили ракетой");
     }
+    
+    @Override
+    public String toString() {
+        return "Имя :" + modelName + "\n" + "Модель: " + mark + "\n"
+                + "Производитель: " + origin + "\n" + "Высота: " + height + "\n"
+                + "Вес: " + weight + "\n" + "Скорость: " + speed + "\n" + "Сила: " + strength + "\n"
+                + "Броня: " + armor + "\n";
+    }
 }
