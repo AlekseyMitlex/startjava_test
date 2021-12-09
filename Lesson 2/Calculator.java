@@ -1,9 +1,11 @@
+import java.util.Scanner;
+
 class Calculator {
 
     private int firstNumber;
     private int secondNumber;
     private char sign;
-    
+
     public void setFirstNumber(int firstNumber) {
         this.firstNumber = firstNumber;
     }
@@ -15,7 +17,7 @@ class Calculator {
     public void setSign(char sign) {
         this.sign = sign;
     }
-    
+
     public void calculator() {
         switch (sign) {
             case '+':
@@ -34,15 +36,19 @@ class Calculator {
                 System.out.println(firstNumber % secondNumber);
                 break;
             case '^':
-                int degree = 1;
-                while (secondNumber > 0) {
-                    degree *= firstNumber;
-                    secondNumber--;
-                }
-                System.out.println(degree);
+                pow();
                 break;
             default:
                 System.out.println("Жил-был программист и было у него два сына - Антон и Неантон");
         }
+    }
+
+    private void pow() {
+        int degree = 1;
+        while (secondNumber > 0) {
+            degree *= firstNumber;
+            secondNumber--;
+        }
+        System.out.println(degree);
     }
 }

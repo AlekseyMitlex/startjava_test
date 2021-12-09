@@ -4,7 +4,7 @@ public class CalculatorTest {
 
     public static void main(String[] args) {
         String answerPlayer = "yes";
-        while (!"no".equals(answerPlayer)) {
+        while ("yes".equals(answerPlayer)) {
             Calculator calc = new Calculator();
 
             Scanner scanner = new Scanner(System.in);
