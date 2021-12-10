@@ -35,8 +35,8 @@ public class GuessNumber {
     public void play() {
         do {
             inputNumber(player1);
-            inputNumber(player2);
             guess(player1);
+            inputNumber(player2);
             guess(player2);
         } while (!isVictory);
     }
