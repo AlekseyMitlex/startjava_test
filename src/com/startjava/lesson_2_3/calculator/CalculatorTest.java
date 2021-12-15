@@ -2,6 +2,8 @@ package com.startjava.lesson_2_3.calculator;
 
 import java.util.Scanner;
 
+import static com.startjava.lesson_2_3.calculator.Calculator.calculator;
+
 public class CalculatorTest {
 
     public static void main(String[] args) {
@@ -18,7 +20,7 @@ public class CalculatorTest {
             System.out.println("Введите второе число:");
             calc.setSecondNumber(scanner.nextInt());
 
-            calc.calculator();
+            calculator();
 
             do {
                 System.out.println("Хотите продолжить вычисления? [yes/no]");
@@ -27,3 +29,4 @@ public class CalculatorTest {
         }
     }
 }
+

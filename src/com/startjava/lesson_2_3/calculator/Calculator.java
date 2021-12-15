@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Calculator {
 
-    private int firstNumber;
-    private int secondNumber;
-    private char sign;
+    static private int firstNumber;
+    static private int secondNumber;
+    static private char sign;
 
     public void setFirstNumber(int firstNumber) {
         this.firstNumber = firstNumber;
@@ -20,7 +20,7 @@ public class Calculator {
         this.sign = sign;
     }
 
-    public void calculator() {
+    static public void calculator() {
         switch (sign) {
             case '+':
                 System.out.println(firstNumber + secondNumber);
@@ -45,7 +45,7 @@ public class Calculator {
         }
     }
 
-    private void pow() {
+    private static void pow() {
         int degree = 1;
         while (secondNumber > 0) {
             degree *= firstNumber;
