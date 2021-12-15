@@ -7,5 +7,8 @@ public class ArraysAppendStringBuilder {
         StringBuilder sb = new StringBuilder("Hellow World");
         sb.append(array, 2, 3);
         System.out.println(sb);
+
+        sb.append("java");
+        System.out.println(sb);
     }
 }
