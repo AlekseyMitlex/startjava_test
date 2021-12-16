@@ -1,56 +1,41 @@
 package com.startjava.lesson_2_3.calculator;
 
-import java.util.Scanner;
-
 public class Calculator {
 
     static private int firstNumber;
     static private int secondNumber;
     static private char sign;
 
-    public void setFirstNumber(int firstNumber) {
-        this.firstNumber = firstNumber;
+    static public void input(String[] numbers) {
+
+        firstNumber = Integer.parseInt(numbers[0]);
+        sign = numbers[1].charAt(0);
+        secondNumber = Integer.parseInt(numbers[2]);
     }
 
-    public void setSecondNumber(int secondNumber) {
-        this.secondNumber = secondNumber;
-    }
-
-    public void setSign(char sign) {
-        this.sign = sign;
-    }
-
-    static public void calculator() {
+    static public double calculator() {
+        double result = 0;
         switch (sign) {
-            case '+':
-                System.out.println(firstNumber + secondNumber);
-                break;
-            case '-':
-                System.out.println(firstNumber - secondNumber);
-                break;
-            case '*':
-                System.out.println(firstNumber * secondNumber);
-                break;
-            case '/':
-                System.out.println(firstNumber / secondNumber);
-                break;
-            case '%':
-                System.out.println(firstNumber % secondNumber);
-                break;
-            case '^':
-                pow();
-                break;
-            default:
-                System.out.println("Жил-был программист и было у него два сына - Антон и Неантон");
+            case '+' -> {
+                result = Math.addExact(firstNumber, secondNumber);
+            }
+            case '-' -> {
+                result = Math.subtractExact(firstNumber, secondNumber);
+            }
+            case '*' -> {
+                result = Math.multiplyExact(firstNumber, secondNumber);
+            }
+            case '/' -> {
+                result = Math.floorDiv(firstNumber, secondNumber);
+            }
+            case '%' -> {
+                result = Math.floorMod(firstNumber, secondNumber);
+            }
+            case '^' -> {
+                result = Math.pow(firstNumber, firstNumber);
+            }
+            default -> System.out.println("Не то нажал");
         }
-    }
-
-    private static void pow() {
-        int degree = 1;
-        while (secondNumber > 0) {
-            degree *= firstNumber;
-            secondNumber--;
-        }
-        System.out.println(degree);
+        return result;
     }
 }
