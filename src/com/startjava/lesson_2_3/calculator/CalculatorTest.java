@@ -3,7 +3,7 @@ package com.startjava.lesson_2_3.calculator;
 import java.util.Scanner;
 
 import static com.my_practic.calculator.Calculator1.calculator;
-import static com.my_practic.calculator.Calculator1.input;
+import static com.startjava.lesson_2_3.calculator.Calculator.input;
 
 public class CalculatorTest {
 
