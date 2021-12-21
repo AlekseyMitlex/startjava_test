@@ -1,5 +1,8 @@
 package com.startjava.lesson_2_3.game;
 
+import com.my_practic.game.GuessNumber;
+import com.my_practic.game.Player;
+
 import java.util.Scanner;
 
 public class GuessNumberTest {
@@ -10,13 +13,13 @@ public class GuessNumberTest {
         while (!"no".equals(answerPlayer)) {
             Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Имя первого игрока");
-            Player player1 = new Player(scanner.nextLine());
+            System.out.print("Имя первого игрока: ");
+            com.my_practic.game.Player player = new com.my_practic.game.Player(scanner.nextLine());
 
-            System.out.println("Имя второго игрока");
-            Player player2 = new Player(scanner.nextLine());
+            System.out.print("Имя второго игрока: ");
+            com.my_practic.game.Player player2 = new Player(scanner.nextLine());
 
-            GuessNumber game = new GuessNumber(player1, player2);
+            com.my_practic.game.GuessNumber game = new GuessNumber(player, player2);
 
             game.play();
 
