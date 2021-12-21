@@ -2,28 +2,23 @@ package com.startjava.lesson_2_3_4.calculator;
 
 import java.util.Scanner;
 
-import static com.my_practic.calculator.Calculator1.calculator;
-import static com.startjava.lesson_2_3_4.calculator.Calculator.input;
+import static com.startjava.lesson_2_3_4.calculator.Calculator.calculator;
 
 public class CalculatorTest {
 
     public static void main(String[] args) {
-        String answerPlayer = "yes";
+        String playerAnswer = "yes";
 
-        while ("yes".equals(answerPlayer)) {
+        Scanner scanner = new Scanner(System.in);
 
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Введите математическое выражение(пример 9 * 10 через пробел): ");
-            String calc = scanner.nextLine();
-            String[] numbers = calc.split(" ");
+        while ("yes".equals(playerAnswer)) {
 
-            input(numbers);
             System.out.println(calculator());
 
             do {
                 System.out.println("Хотите продолжить вычисления? [yes/no]");
-                answerPlayer = scanner.nextLine();
-            } while (!"yes".equals(answerPlayer) && !"no".equals(answerPlayer));
+                playerAnswer = scanner.nextLine();
+            } while (!"yes".equals(playerAnswer) && !"no".equals(playerAnswer));
         }
     }
 }
