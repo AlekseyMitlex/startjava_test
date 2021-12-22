@@ -1,17 +1,12 @@
 package com.startjava.lesson_2_3_4.calculator;
 
-import java.util.Scanner;
-
 public class Calculator {
 
-    static private int firstNumber;
-    static private int secondNumber;
-    static private char sign;
+    private static int firstNumber;
+    private static int secondNumber;
+    private static char sign;
 
-    static public double calculator() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите математическое выражение(пример 9 * 10 через пробел): ");
-        String calc = scanner.nextLine();
+    public static double calculate(String calc) {
         String[] numbers = calc.split(" ");
         firstNumber = Integer.parseInt(numbers[0]);
         sign = numbers[1].charAt(0);
@@ -23,7 +18,7 @@ public class Calculator {
             case '*' -> result = Math.multiplyExact(firstNumber, secondNumber);
             case '/' -> result = Math.floorDiv(firstNumber, secondNumber);
             case '%' -> result = Math.floorMod(firstNumber, secondNumber);
-            case '^' -> result = Math.pow(firstNumber, firstNumber);
+            case '^' -> result = Math.pow(firstNumber, secondNumber);
             default -> System.out.println("Не то нажал");
         }
         return result;

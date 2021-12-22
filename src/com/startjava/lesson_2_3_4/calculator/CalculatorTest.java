@@ -2,18 +2,16 @@ package com.startjava.lesson_2_3_4.calculator;
 
 import java.util.Scanner;
 
-import static com.startjava.lesson_2_3_4.calculator.Calculator.calculator;
-
 public class CalculatorTest {
 
     public static void main(String[] args) {
         String playerAnswer = "yes";
 
-        Scanner scanner = new Scanner(System.in);
-
         while ("yes".equals(playerAnswer)) {
-
-            System.out.println(calculator());
+            System.out.print("Введите математическое выражение(пример 9 * 10 через пробел): ");
+            Scanner scanner = new Scanner(System.in);
+            String calc = scanner.nextLine();
+            System.out.println(Calculator.calculate(calc));
 
             do {
                 System.out.println("Хотите продолжить вычисления? [yes/no]");
