@@ -16,15 +16,15 @@ public class Player {
         return name;
     }
 
-    public void setNumbers(int numbers) {
-        this.numbers[count + 1] = numbers;
+    public void setNumber(int number) {
+        numbers[count + 1] = number;
     }
 
-    public int getNumbers() {
+    public int getNumber() {
         return numbers[count + 1];
     }
 
-    public int[] getNumberCopy() {
+    public int[] getNumbersCopy() {
         return Arrays.copyOf(numbers, count);
     }
 
@@ -38,6 +38,6 @@ public class Player {
 
     public void throwOff() {
         Arrays.fill(numbers, 0);
-        count = -2;
+        count = 0;
     }
 }

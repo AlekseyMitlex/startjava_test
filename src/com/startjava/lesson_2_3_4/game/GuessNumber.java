@@ -8,7 +8,7 @@ public class GuessNumber {
     private Player player2;
     private boolean isVictory = false;
 
-    int secretNumber = (int) (Math.random() * 100);
+   private int secretNumber = (int) (Math.random() * 100);
 
     Scanner scanner = new Scanner(System.in);
 
@@ -17,39 +17,39 @@ public class GuessNumber {
         this.player2 = player2;
     }
 
-    public void guess(Player player) {
-        if (player.getNumbers() == secretNumber || player.getCount() == 8) {
-            if (player.getNumbers() == secretNumber) {
+    private void guess(Player player) {
+        if (player.getNumber() == secretNumber || player.getCount() == 8) {
+            if (player.getNumber() == secretNumber) {
                 System.out.println("Игрок " + player.getName() + " угадал число " + " с " + player.getCount() + " попытки");
                 isVictory = true;
             } else if (player.getCount() == 8) {
                 System.out.println("\nУ игрока " + player.getName() + " закончились попытки\n");
                 isVictory = true;
             }
-        } else if (player.getNumbers() > secretNumber) {
-            System.out.println(player.getNumbers() + " Данное число, больше того, что загадал компьютер");
-        } else if (player.getNumbers() < secretNumber) {
-            System.out.println(player.getNumbers() + " Данное число меньше того, что загадал компьютер");
+        } else if (player.getNumber() > secretNumber) {
+            System.out.println(player.getNumber() + " Данное число, больше того, что загадал компьютер");
+        } else if (player.getNumber() < secretNumber) {
+            System.out.println(player.getNumber() + " Данное число меньше того, что загадал компьютер");
         }
     }
 
-    public void countAttempts(Player player) {
+    private void countAttempts(Player player) {
         System.out.println("Попытки игрока  " + player.getName());
-        for (int numbers : player.getNumberCopy()) {
+        for (int numbers : player.getNumbersCopy()) {
             System.out.print(numbers + "\n");
         }
     }
 
-    public void endedAttempts(Player player) {
+    private void showAttempts (Player player) {
         if (player.getCount() == 10) {
             System.out.println("У Вас, закончились попытки! " + player.getName());
         }
     }
 
-    public void inputNumber(Player player) {
+    private void inputNumber(Player player) {
         player.setCount(player.getCount() + 1);
         System.out.println("Число от " + player.getName());
-        player.setNumbers(scanner.nextInt());
+        player.setNumber(scanner.nextInt());
     }
 
 
