@@ -10,8 +10,8 @@ public class CalculatorTest {
         while ("yes".equals(playerAnswer)) {
             System.out.print("Введите математическое выражение(пример 9 * 10 через пробел): ");
             Scanner scanner = new Scanner(System.in);
-            String calc = scanner.nextLine();
-            System.out.println(Calculator.calculate(calc));
+            String mathExpression = scanner.nextLine();
+            System.out.println(Calculator.calculate(mathExpression));
 
             do {
                 System.out.println("Хотите продолжить вычисления? [yes/no]");
