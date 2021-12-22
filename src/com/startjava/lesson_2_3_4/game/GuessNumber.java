@@ -33,14 +33,14 @@ public class GuessNumber {
         }
     }
 
-    public void getResult(Player player) {
+    public void countAttempts(Player player) {
         System.out.println("Попытки игрока  " + player.getName());
         for (int numbers : player.getNumberCopy()) {
             System.out.print(numbers + "\n");
         }
     }
 
-    public void countAttempts(Player player) {
+    public void endedAttempts(Player player) {
         if (player.getCount() == 10) {
             System.out.println("У Вас, закончились попытки! " + player.getName());
         }
@@ -62,8 +62,8 @@ public class GuessNumber {
             inputNumber(player2);
             guess(player2);
         } while (!isVictory);
-        getResult(player1);
-        getResult(player2);
+        countAttempts(player1);
+        countAttempts(player2);
         player1.throwOff();
         player2.throwOff();
     }
