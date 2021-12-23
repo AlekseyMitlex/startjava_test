@@ -46,7 +46,7 @@ public class GuessNumber {
     }
 
     private void showAttempts(Player player) {
-        System.out.print("Попытки игрока:  " + player.getName() + " " + "\n");
+        System.out.printf("\nПопытки игрока %s : ", player.getName());
         for (int number : player.getNumbersCopy()) {
             System.out.print(number + " ");
         }

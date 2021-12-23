@@ -19,7 +19,7 @@ public class GuessNumberTest {
             game.play();
 
             do {
-                System.out.println("Хотите продолжить Сумашедшую игру? [yes/no]");
+                System.out.println("\nХотите продолжить Сумаcшедшую игру? [yes/no]");
                 playerAnswer = scanner.nextLine();
             } while (!"yes".equals(playerAnswer) && !"no".equals(playerAnswer));
         }
