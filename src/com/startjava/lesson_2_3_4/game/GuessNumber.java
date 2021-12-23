@@ -16,7 +16,8 @@ public class GuessNumber {
         this.player2 = player2;
     }
 
-    private void inputNumber(Player player) {
+    private void inputNumber(Player player, int index) {
+        player.setCount(index);
         System.out.println("Число от " + player.getName());
         player.setNumber(scanner.nextInt());
     }
@@ -33,9 +34,8 @@ public class GuessNumber {
         return false;
     }
 
-     private boolean makeMove(Player player, int i) {
-        inputNumber(player);
-         player.setCount(i);
+    private boolean makeMove(Player player, int count) {
+        inputNumber(player, count);
         if (!guess(player)) {
             if (player.getCount() == 10) {
                 System.out.println("У " + player.getName() + " закончились попытки");
@@ -46,7 +46,7 @@ public class GuessNumber {
     }
 
     private void showAttempts(Player player) {
-        System.out.println("Попытки игрока  " + player.getName());
+        System.out.print("Попытки игрока:  " + player.getName() + " " + "\n");
         for (int number : player.getNumbersCopy()) {
             System.out.print(number + " ");
         }

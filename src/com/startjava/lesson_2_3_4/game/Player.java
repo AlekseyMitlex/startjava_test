@@ -25,7 +25,7 @@ public class Player {
     }
 
     public int[] getNumbersCopy() {
-        return Arrays.copyOf(numbers, 0);
+        return Arrays.copyOf(numbers, count);
     }
 
     public int getCount() {
