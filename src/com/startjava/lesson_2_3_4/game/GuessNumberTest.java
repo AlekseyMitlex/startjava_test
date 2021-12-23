@@ -5,10 +5,9 @@ import java.util.Scanner;
 public class GuessNumberTest {
 
     public static void main(String[] args) {
-        String answerPlayer = "yes";
+        String playerAnswer = "yes";
         Scanner scanner = new Scanner(System.in);
-
-        while (!"no".equals(answerPlayer)) {
+        while (!"no".equals(playerAnswer)) {
 
             System.out.print("Имя первого игрока: ");
             Player player1 = new Player(scanner.nextLine());
@@ -17,13 +16,12 @@ public class GuessNumberTest {
             Player player2 = new Player(scanner.nextLine());
 
             GuessNumber game = new GuessNumber(player1, player2);
-
             game.play();
 
             do {
                 System.out.println("Хотите продолжить Сумашедшую игру? [yes/no]");
-                answerPlayer = scanner.nextLine();
-            } while (!"yes".equals(answerPlayer) && !"no".equals(answerPlayer));
+                playerAnswer = scanner.nextLine();
+            } while (!"yes".equals(playerAnswer) && !"no".equals(playerAnswer));
         }
     }
 }

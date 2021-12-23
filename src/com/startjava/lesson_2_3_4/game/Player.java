@@ -17,15 +17,15 @@ public class Player {
     }
 
     public void setNumber(int number) {
-        numbers[count + 1] = number;
+        numbers[count - 1] = number;
     }
 
     public int getNumber() {
-        return numbers[count + 1];
+        return numbers[count - 1];
     }
 
     public int[] getNumbersCopy() {
-        return Arrays.copyOf(numbers, count);
+        return Arrays.copyOf(numbers, 0);
     }
 
     public int getCount() {
@@ -37,7 +37,7 @@ public class Player {
     }
 
     public void throwOff() {
-        Arrays.fill(numbers, 0);
+        Arrays.fill(numbers, 0, count, 0);
         count = 0;
     }
 }

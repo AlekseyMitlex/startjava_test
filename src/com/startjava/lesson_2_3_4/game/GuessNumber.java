@@ -33,32 +33,34 @@ public class GuessNumber {
         return false;
     }
 
-     private boolean makePerform(Player player) {
+     private boolean makeMove(Player player, int i) {
         inputNumber(player);
+         player.setCount(i);
         if (!guess(player)) {
             if (player.getCount() == 10) {
                 System.out.println("У " + player.getName() + " закончились попытки");
             }
             return true;
-        } else return false;
+        }
+        return false;
     }
 
     private void showAttempts(Player player) {
         System.out.println("Попытки игрока  " + player.getName());
-        for (int numbers : player.getNumbersCopy()) {
-            System.out.print(numbers + "\n");
+        for (int number : player.getNumbersCopy()) {
+            System.out.print(number + " ");
         }
     }
 
     public void play() {
         System.out.println("Число компа " + secretNumber);
         System.out.println("У каждого игрока по " + 10 + " попыток!");
-        for (int i = -1; i <= 10; i++) {
-            player1.setCount(i);
-            player2.setCount(i);
-            if (!makePerform(player1)) {
+        for (int i = 1; i <= 10; i++) {
+            if (!makeMove(player1, i)) {
                 break;
-            } else if (!makePerform(player2)) {
+            }
+
+            if (!makeMove(player2, i)) {
                 break;
             }
         }
