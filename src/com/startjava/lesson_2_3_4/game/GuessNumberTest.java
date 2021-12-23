@@ -6,9 +6,9 @@ public class GuessNumberTest {
 
     public static void main(String[] args) {
         String answerPlayer = "yes";
+        Scanner scanner = new Scanner(System.in);
 
         while (!"no".equals(answerPlayer)) {
-            Scanner scanner = new Scanner(System.in);
 
             System.out.print("Имя первого игрока: ");
             Player player1 = new Player(scanner.nextLine());
