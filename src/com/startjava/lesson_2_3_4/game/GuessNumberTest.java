@@ -8,7 +8,6 @@ public class GuessNumberTest {
         String playerAnswer = "yes";
         Scanner scanner = new Scanner(System.in);
         while (!"no".equals(playerAnswer)) {
-
             System.out.print("Имя первого игрока: ");
             Player player1 = new Player(scanner.nextLine());
 

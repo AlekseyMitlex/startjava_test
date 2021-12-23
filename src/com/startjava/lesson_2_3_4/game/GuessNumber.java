@@ -16,6 +16,35 @@ public class GuessNumber {
         this.player2 = player2;
     }
 
+    public void play() {
+        System.out.println("Число компа " + secretNumber);
+        System.out.println("У каждого игрока по " + 10 + " попыток!");
+        for (int i = 1; i <= 10; i++) {
+            if (!makeMove(player1, i)) {
+                break;
+            }
+
+            if (!makeMove(player2, i)) {
+                break;
+            }
+        }
+        showAttempts(player1);
+        showAttempts(player2);
+        player1.clear();
+        player2.clear();
+    }
+
+    private boolean makeMove(Player player, int count) {
+        inputNumber(player, count);
+        if (!guess(player)) {
+            if (player.getCount() == 10) {
+                System.out.println("У " + player.getName() + " закончились попытки");
+            }
+            return true;
+        }
+        return false;
+    }
+
     private void inputNumber(Player player, int index) {
         player.setCount(index);
         System.out.println("Число от " + player.getName());
@@ -34,39 +63,10 @@ public class GuessNumber {
         return false;
     }
 
-    private boolean makeMove(Player player, int count) {
-        inputNumber(player, count);
-        if (!guess(player)) {
-            if (player.getCount() == 10) {
-                System.out.println("У " + player.getName() + " закончились попытки");
-            }
-            return true;
-        }
-        return false;
-    }
-
     private void showAttempts(Player player) {
         System.out.printf("\nПопытки игрока %s : ", player.getName());
         for (int number : player.getNumbersCopy()) {
             System.out.print(number + " ");
         }
-    }
-
-    public void play() {
-        System.out.println("Число компа " + secretNumber);
-        System.out.println("У каждого игрока по " + 10 + " попыток!");
-        for (int i = 1; i <= 10; i++) {
-            if (!makeMove(player1, i)) {
-                break;
-            }
-
-            if (!makeMove(player2, i)) {
-                break;
-            }
-        }
-        showAttempts(player1);
-        showAttempts(player2);
-        player1.throwOff();
-        player2.throwOff();
     }
 }

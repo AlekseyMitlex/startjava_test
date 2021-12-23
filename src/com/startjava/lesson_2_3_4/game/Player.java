@@ -36,7 +36,7 @@ public class Player {
         this.count = count;
     }
 
-    public void throwOff() {
+    public void clear() {
         Arrays.fill(numbers, 0, count, 0);
         count = 0;
     }
