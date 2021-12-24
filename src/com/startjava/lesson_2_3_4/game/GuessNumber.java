@@ -52,14 +52,12 @@ public class GuessNumber {
     }
 
     private boolean guess(Player player) {
-        if (player.getNumber() > secretNumber) {
-            System.out.println(player.getNumber() + " Данное число, больше того, что загадал компьютер +");
-        } else if (player.getNumber() < secretNumber) {
-            System.out.println(player.getNumber() + " Данное число меньше того, что загадал компьютер");
-        } else {
+        if (player.getNumber() == secretNumber) {
             System.out.println(player.getName() + ", Вы угадали c " + player.getCount() + " попытки!");
             return true;
         }
+        String hint = player.getNumber() > secretNumber ? "больше" : "меньше";
+            System.out.println(player.getName() + " Данное число " + hint + " того, что загадал компьютер");
         return false;
     }
 
