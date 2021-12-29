@@ -65,4 +65,4 @@ UPDATE jaegers SET kaijukill = kaijukill + 1 WHERE launch > 2022;
 
 -- remove destroyed robots
 
-postgres=# DELETE FROM jaegers WHERE launch < 2022;
+DELETE FROM jaegers WHERE launch < 2022;
