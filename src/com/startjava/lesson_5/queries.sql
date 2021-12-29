@@ -66,3 +66,5 @@ UPDATE jaegers SET kaijukill = kaijukill + 1 WHERE launch > 2022;
 -- remove destroyed robots
 
 DELETE FROM jaegers WHERE launch < 2022;
+
+-- psql -U postgres -f queries.sql (START .SQL FILE)
