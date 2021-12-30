@@ -5,8 +5,7 @@ SELECT * FROM jaegers;
 SELECT * FROM jaegers WHERE status = 'Worker';
 
 -- display robots of several series,  Mark-1 and Mark-6
-SELECT * FROM jaegers WHERE mark = 'Mark-1' UNION
-SELECT * FROM jaegers WHERE mark = 'Mark-6' ORDER BY mark DESC;
+SELECT * FROM jaegers WHERE mark IN ('Mark-1', 'Mark-6') ORDER BY mark DESC;
 
 -- sort the table in descending order by column mark
 SELECT * FROM jaegers ORDER BY mark DESC;
