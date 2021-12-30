@@ -4,7 +4,7 @@ INSERT INTO Jaegers(modelName, mark, height, weight, status, origin, launch, kai
 	VALUES
 		('GipsyDanger',		'Mark-3',	'79.25',	'1.980',    'Destroyed', 	'USA',		'2017',	'9'),
 		('ChernoAlpha',		'Mark-1',	'85.34',	'2.412',    'Worker',    	'Russia',	'2015',	'6'),
-		('StrikerEureka',	'Mark-5',	'76.2',		'1.850',    'Worker',          'Australia', '2019',	'11'),
+		('StrikerEureka',	'Mark-5',	'76.2',		'1.850',    'Worker',          'Australia',     '2019',	'11'),
 		('GipsyAvenger',	'Mark-6',	'81.77',	'2.004',    'Destroyed', 	'Unknown',	'2034',	'1'),
 		('CrimsonTyphoon',	'Mark-4',	'76.2',		'1.722',    'Worker',    	'China',	'2018',	'7'),
 		('ObsidianFury',	'Mark-6',	'85.0',		'1.800',    'Destroyed', 	'Unknown',	'2035',	'0'),
