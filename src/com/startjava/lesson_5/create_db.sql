@@ -6,6 +6,7 @@ CREATE TABLE Jaegers (
     mark CHAR(6),
     height REAL,
     weight REAL,
+    status CHAR(9),
     origin TEXT,
     launch INTEGER,
     kaijuKill INTEGER
