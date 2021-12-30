@@ -2,7 +2,7 @@
 SELECT * FROM jaegers;
 
 -- display only non-destroyed robots
-SELECT * FROM jaegers WHERE launch >= '2025';
+SELECT * FROM jaegers WHERE status = 'Worker';
 
 -- display robots of several series,  Mark-1 and Mark-6
 SELECT * FROM jaegers WHERE mark = 'Mark-1' UNION
