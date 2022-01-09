@@ -1,5 +1,5 @@
 public class MyFirstApp {
     public static void main(String[] args) {
-        System.out.println("Hello, world");о
+        System.out.println("Hello, world");
     }
 }
