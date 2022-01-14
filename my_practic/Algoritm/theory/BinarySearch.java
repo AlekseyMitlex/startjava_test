@@ -1,4 +1,4 @@
-package Algoritm;
+package Algoritm.theory;
 
 public class BinarySearch {
 
