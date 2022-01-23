@@ -11,9 +11,8 @@ public class ArraysCopy {
 
         System.out.println(Arrays.toString(array));
         System.out.println(Arrays.toString(array1));
-        System.arraycopy(array, index, array1, index + 1, array.length - index - 1);
+        System.arraycopy(array, index + 1, array1, index, array.length - index - 1);
         System.out.println(Arrays.toString(array));
         System.out.println(Arrays.toString(array1));
-
     }
 }

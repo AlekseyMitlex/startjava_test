@@ -4,14 +4,12 @@ package private_lesson.abramyan.begin.begin1;
 
 public class Main {
 
-    static InputClass figura = new InputClass();
-
     public static void main(String[] args) {
+        InputClass figura = new InputClass();
 
         figura.input();
         figura.doPerimeter();
         figura.outputDataTxt();
-        figura.outputDataNumeric(figura.perimetr);
-
+        figura.outputDataNumeric();
     }
 }

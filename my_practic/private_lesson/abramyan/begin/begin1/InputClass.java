@@ -18,4 +18,14 @@ public class InputClass implements Arithmetic, Print {
     public void doPerimeter() {
         perimetr = 4 * storonaKvadrata;
     }
+
+    @Override
+    public void outputDataTxt() {
+        System.out.print("Периметр квадрата равен: ");
+    }
+
+    @Override
+    public void outputDataNumeric() {
+        System.out.print(perimetr);
+    }
 }
