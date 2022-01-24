@@ -7,6 +7,7 @@ Ctrl + r - Найти и заменить файлы за раз
 Shift + F6 - рефакторинг
 Ctrl + Alt + C создание Constant Final Variable
 Ctrl + H Показывает всех наследников
+Ctrl + Y Удаление всей строки
 
 Alt + Insert - Вызов Generate Menu
 Alt + Shift + F10 — выбрать файл запуска и выполнить программу
