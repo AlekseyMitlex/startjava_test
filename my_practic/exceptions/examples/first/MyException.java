@@ -16,7 +16,6 @@ public class MyException {
             System.out.println("Не увидите это сообщение!");
         } catch (ArithmeticException e) {
             System.out.println("Увидите это сообщение! " + e);
-            ;
         }
         System.out.println("Жизнь продолжается");
     }
