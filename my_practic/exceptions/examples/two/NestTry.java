@@ -3,7 +3,7 @@ package exceptions.examples.two;
 class NestTry {
     public static void main(String args[]) {
         try {
-            int a = 2;
+            int a = args.length; // a = 0 or 1 or 2 подставляем
 /* Если не указаны аргументы командной строки,
 в следующем операторе будет сгенерировано
 исключение в связи с делением на нуль. */
