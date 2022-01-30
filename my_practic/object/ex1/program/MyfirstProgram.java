@@ -6,7 +6,7 @@ public class MyfirstProgram {
 
     public static void main(String[] args) {
         Computer comp = new Computer("IBM", 2048, 350, 2);
-        System.out.println("comp = " + comp);
+
 //        comp.setName("IBM");
 //        comp.setHdd(-350);
 //        comp.setRam(-2048);
