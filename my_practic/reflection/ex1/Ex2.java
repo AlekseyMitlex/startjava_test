@@ -1,4 +1,4 @@
-package reflection;
+package reflection.ex1;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -8,7 +8,7 @@ public class Ex2 {
     public static void main(String[] args) throws ClassNotFoundException
             , InstantiationException, IllegalAccessException
             , NoSuchMethodException, InvocationTargetException {
-        Class employeeClass = Class.forName("reflection.Employee");
+        Class employeeClass = Class.forName("reflection.ex1.Employee");
 
         // Устаревший способ newInstance();
 //        Employee o = (Employee)employeeClass.newInstance();
