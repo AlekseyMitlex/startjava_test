@@ -1,6 +1,4 @@
-package baseJava_lessons.OOP.Encapsulation;
-
-import java.lang.Math;
+package OOP.Encapsulation;
 
 public class Main {
     public static void main(String args[]) {

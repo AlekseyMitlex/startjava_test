@@ -1,4 +1,4 @@
-package baseJava_lessons.OOP.Inheritance.example3;
+package OOP.Inheritance.example3;
 
 public class Test5 {
 }

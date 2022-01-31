@@ -1,4 +1,4 @@
-package baseJava_lessons.OOP.Inheritance.example2;
+package OOP.Inheritance.example2;
 
 public class Test4 {
     public static void main(String[] args) {

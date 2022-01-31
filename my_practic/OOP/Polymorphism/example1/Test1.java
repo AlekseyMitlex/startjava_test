@@ -1,4 +1,4 @@
-package baseJava_lessons.OOP.Polymorphism.example1;
+package OOP.Polymorphism.example1;
 
 public class Test1 {
 

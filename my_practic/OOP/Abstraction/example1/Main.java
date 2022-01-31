@@ -1,4 +1,4 @@
-package baseJava_lessons.OOP.Abstraction.example1;
+package OOP.Abstraction.example1;
 
 public class Main {
     public static void main(String[] args) {

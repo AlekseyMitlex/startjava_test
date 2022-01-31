@@ -1,7 +1,7 @@
-package baseJava_lessons.OOP.Polymorphism;
+package OOP.Polymorphism;
 
-import java.util.List;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String args[]) {
