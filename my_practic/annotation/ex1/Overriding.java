@@ -1,6 +1,6 @@
 package annotation.ex1;
 
-public class Test1 {
+public class Overriding {
 
     public static void main(String[] args) {
         Parent p = new Parent("Zaur");
