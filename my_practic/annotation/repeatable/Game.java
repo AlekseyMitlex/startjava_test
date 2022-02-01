@@ -7,7 +7,6 @@ import java.lang.annotation.RetentionPolicy;
 @Repeatable(Games.class)
 @interface Game {
     String name() default "Что-то под вопросом";
-
     String day();
 }
 
