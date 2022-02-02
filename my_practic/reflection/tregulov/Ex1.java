@@ -1,4 +1,4 @@
-package reflection.ex1;
+package reflection.tregulov;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -13,7 +13,7 @@ public class Ex1 {
 
         // 3 способа создать объект класса, который называется Класс
         // создать объект, который является объектом Класса Employee
-        Class employeeClass = Class.forName("reflection.ex1.Employee");
+        Class employeeClass = Class.forName("reflection.tregulov.Employee");
         // 2-й
 //        Class employeeClass2 = Employee.class;
         // 3-й

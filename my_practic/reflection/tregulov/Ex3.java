@@ -1,4 +1,4 @@
-package reflection.ex1;
+package reflection.tregulov;
 
 import java.lang.reflect.Field;
 
