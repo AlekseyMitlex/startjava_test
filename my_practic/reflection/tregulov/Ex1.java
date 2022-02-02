@@ -40,6 +40,11 @@ public class Ex1 {
                 someMethod1.getReturnType() + ", parameter types = " +
                 Arrays.toString(someMethod1.getParameterTypes()));
 
+        Method someMethod5 = employeeClass.getMethod("getSalary");
+        System.out.println("Return type of method5 getSalary = " +
+                someMethod5.getReturnType() + ", parameter types = " +
+                Arrays.toString(someMethod5.getParameterTypes()));
+
         Method someMethod2 = employeeClass.getMethod("setSalary", double.class);
         System.out.println("Return type of method setSalary = " +
                 someMethod2.getReturnType() + ", parameter types = " +

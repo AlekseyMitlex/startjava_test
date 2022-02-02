@@ -2,7 +2,7 @@ package reflection.tregulov;
 
 import java.lang.reflect.Field;
 
-// Декларируем гет/сет и конструктор на 4 параметра для Салари(инициализирует 100)
+// Декларируем гет/сет и конструктор на 4 параметра для Салари(инициализирует 1000)
 // Рефлексия нарушает правила инкапсуляции. Попробуем прочитать Салари!!!
 
 public class Ex3 {
@@ -10,7 +10,7 @@ public class Ex3 {
     public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
         Employee employee = new Employee(10, "Zaur", "IT");
 
-        // 2-й способ вызова Class
+        // 3-й способ вызова Class
         Class employeeClass = employee.getClass();
 
         // Get field salary через getDeclaredField
@@ -18,7 +18,7 @@ public class Ex3 {
 
         // Требуем получить доступ к private Field
         field.setAccessible(true);
-        // Пробуем записать значение Field записать в переменную
+        // Пробуем записать значение Field в переменную
         double salaryValue = (Double) field.get(employee);
         System.out.println("salaryValue = " + salaryValue);
 

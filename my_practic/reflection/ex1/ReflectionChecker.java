@@ -60,7 +60,6 @@ public class ReflectionChecker {
             System.out.println("object = " + object);
         }
     }
-
     // Создание объекта неизвестного нам класса
     // Создание через рефлекшн происходит в 2 раза медленнее, чем через new
     public Object createNewObject(Object object) throws InstantiationException, IllegalAccessException {
