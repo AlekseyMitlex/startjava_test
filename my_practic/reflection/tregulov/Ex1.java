@@ -1,5 +1,6 @@
 package reflection.tregulov;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -98,6 +99,19 @@ public class Ex1 {
                     " parametrs, their types are: " +
                     Arrays.toString(constructor.getParameterTypes()));
         }
-
+        // Все аннотации
+        Annotation[] annotations = employeeClass.getAnnotations();
+        for (Annotation annotation : annotations) {
+            Reflectable annotation1 = (Reflectable) annotation;
+            System.out.println("name: " + annotation1.name());
+            System.out.println("value: " + annotation1.value());
+            System.out.println("Annotation " + annotation);
+        }
+        // Получить доступ к конкретной аннотации, если знаешь её имя
+        Annotation annotation = employeeClass.getAnnotation(Reflectable.class);
+        System.out.println("annotation = " + annotation);
+        Reflectable annotation1 = (Reflectable) annotation;
+        System.out.println("name: " + annotation1.name());
+        System.out.println("value: " + annotation1.value());
     }
 }

@@ -1,5 +1,6 @@
 package reflection.tregulov;
 
+@Reflectable(name = "reflectable", value = "какие-то метаданные")
 public class Employee {
 
     public int id;
@@ -23,9 +24,11 @@ public class Employee {
         this.salary = salary;
     }
 
+
     public double getSalary() {
         return salary;
     }
+
 
     public void setSalary(double salary) {
         this.salary = salary;

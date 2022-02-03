@@ -29,6 +29,5 @@ public class Ex2 {
         method.invoke(obj2, 800.88);
         System.out.println(obj2);
 
-
     }
 }

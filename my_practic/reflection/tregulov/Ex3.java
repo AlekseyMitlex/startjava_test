@@ -27,5 +27,11 @@ public class Ex3 {
         field.set(employee, 1500);
         System.out.println("employee = " + employee);
 
+//        Field privateFieldId = Employee.class.getDeclaredField("id");
+//        privateFieldId.setAccessible(true);
+//        int idNew = (Integer) privateFieldId.get(employee);
+//        privateFieldId.set(employee, 1001);
+//        System.out.println("idNew = " + idNew);
+
     }
 }
