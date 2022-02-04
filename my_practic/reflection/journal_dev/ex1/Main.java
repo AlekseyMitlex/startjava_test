@@ -3,13 +3,15 @@ package reflection.journal_dev.ex1;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.*;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
 
     public Main() throws ClassNotFoundException {
     }
 
-    public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException, IllegalAccessException, NoSuchMethodException {
+    public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException, IllegalAccessException, NoSuchMethodException, InvocationTargetException, InstantiationException {
 // TODO : Get Class Object
 // Get Class using reflection
         Class<?> concreteClass = ConcreteClass.class;
@@ -210,6 +212,53 @@ public class Main {
         System.out.println(method.getReturnType());
         //get method modifiers
         System.out.println(Modifier.toString(method.getModifiers())); //prints "public"
+
+        // TODO : Invoking Public Method
+        System.out.println("\n" + " Invoking Public Method " + "\n");
+
+        Method method777 = Class.forName("java.util.HashMap").getMethod("put", Object.class, Object.class);
+        Map<String, String> hm = new HashMap<>();
+        method777.invoke(hm, "key", "value");
+        System.out.println(hm); // prints {key=value}
+
+        // TODO : Invoking Private Methods
+        System.out.println("\n" + " Invoking Private Methods " + "\n");
+
+
+        //invoking private method
+        Method methodMethod3 = Class.forName("reflection.journal_dev.ex1.BaseClass").getDeclaredMethod("method3", null);
+        methodMethod3.setAccessible(true);
+        methodMethod3.invoke(null, null); //prints "Method3"
+
+
+        // TODO : Java Reflection for Constructors
+        // TODO : Get Public Constructor
+        System.out.println("\n" + " Java Reflection for Constructors!!!!");
+        System.out.println(" Get Public Constructor!!!" + "\n");
+
+
+        Constructor<?> constructor = Class.forName("reflection.journal_dev.ex1.ConcreteClass").getConstructor(int.class);
+        //getting constructor parameters
+        System.out.println(Arrays.toString(constructor.getParameterTypes())); // prints "[int]"
+
+        Constructor<?> hashMapConstructor = Class.forName("java.util.HashMap").getConstructor(null);
+        System.out.println(Arrays.toString(hashMapConstructor.getParameterTypes())); // prints "[]"
+
+        // TODO : Instantiate Object using Constructor
+        System.out.println("\n" + " Instantiate Object using Constructor " + "\n");
+
+
+        Constructor<?> constructor1 = Class.forName("reflection.journal_dev.ex1.ConcreteClass").getConstructor(int.class);
+        //getting constructor parameters
+        System.out.println(Arrays.toString(constructor.getParameterTypes())); // prints "[int]"
+
+        Object myObj = constructor.newInstance(10);
+        Method myObjMethod = myObj.getClass().getMethod("method1", null);
+        myObjMethod.invoke(myObj, null); //prints "Method1 impl."
+
+        Constructor<?> hashMapConstructor1 = Class.forName("java.util.HashMap").getConstructor(null);
+        System.out.println(Arrays.toString(hashMapConstructor1.getParameterTypes())); // prints "[]"
+        HashMap<String, String> myMap = (HashMap<String, String>) hashMapConstructor1.newInstance(null);
 
 
     }
