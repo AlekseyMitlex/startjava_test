@@ -1,23 +1,23 @@
-package annotation.alishev.ex2;
+package annotation.alishev.ex3;
 
-@Author(name = "Neil", dateOfCreation = 2019)
-public class Person {
+@Author1(name = "Neil", dateOfCreation = 2019)
+public class Person1 {
 
     private int id;
     private String name;
 
-    public Person() {
+    public Person1() {
         this.id = -1;
         this.name = "No name";
     }
 
-    public Person(int id, String name) {
+    public Person1(int id, String name) {
         this.id = id;
         this.name = name;
     }
 
     public void sayHello() {
-        System.out.println("Person with id: " + id + " and name: "
+        System.out.println("Person1 with id: " + id + " and name: "
                 + name + " says hello");
     }
 
@@ -36,5 +36,12 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
-}
 
+    @Override
+    public String toString() {
+        return "Person1{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
+}
