@@ -1,4 +1,4 @@
-package alishev;
+package array_example.alishev;
 
 public class Arrays_11 {
     public static void main(String[] args) {
