@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class NetworkUtilsTest {
 
-    @Test(timeout = 1000)
+    @Test(timeout = 2000)
     public void getConnectionShouldReturnFasterThanSecond() {
         NetworkUtils.getConnection();
     }

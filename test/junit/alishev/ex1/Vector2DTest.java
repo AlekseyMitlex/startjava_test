@@ -30,24 +30,4 @@ public class Vector2DTest {
     public void newVectorShouldHaveZeroY() {
         Assert.assertEquals(0, v1.getY(), EPS);
     }
-
-    @Test
-    public void getX() {
-    }
-
-    @Test
-    public void setX() {
-    }
-
-    @Test
-    public void getY() {
-    }
-
-    @Test
-    public void setY() {
-    }
-
-    @Test
-    public void length() {
-    }
 }
