@@ -1,4 +1,4 @@
-package com.my_practic.startjava.lesson_4;
+package array_example;
 
 import java.util.Scanner;
 

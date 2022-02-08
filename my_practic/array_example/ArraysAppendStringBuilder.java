@@ -1,4 +1,4 @@
-package com.my_practic.startjava.lesson_4;
+package array_example;
 
 public class ArraysAppendStringBuilder {
     public static void main(String[] args) {
