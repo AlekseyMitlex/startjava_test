@@ -1,4 +1,4 @@
-package generics;
+package generics.tregulov;
 
 public class ParameterizedClass {
     public static void main(String[] args) {
