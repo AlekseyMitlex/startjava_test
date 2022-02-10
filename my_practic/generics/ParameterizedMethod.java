@@ -9,14 +9,14 @@ public class ParameterizedMethod {
         al1.add(30);
         al1.add(150);
         int a = GenMethod.getSecondElement(al1);
-        System.out.println(a);
+        System.out.println("a = " + a);
 
         ArrayList<String> al2 = new ArrayList<>();
         al2.add("a");
         al2.add("b");
         al2.add("c");
         String s = GenMethod.getSecondElement(al2);
-        System.out.println(s);
+        System.out.println("s = " + s);
 
 
     }
