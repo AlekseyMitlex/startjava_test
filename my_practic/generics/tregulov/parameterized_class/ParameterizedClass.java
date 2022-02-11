@@ -1,4 +1,4 @@
-package generics.tregulov;
+package generics.tregulov.parameterized_class;
 
 public class ParameterizedClass {
     public static void main(String[] args) {
@@ -23,6 +23,11 @@ class info<T> {
 
     public info(T value) {
         this.value = value;
+    }
+
+    // Parametrizovannii Method
+    public <V> V abc(V val) {
+        return val;
     }
 
     public String toString() {

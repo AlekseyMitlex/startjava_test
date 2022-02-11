@@ -1,4 +1,4 @@
-package generics.tregulov;
+package generics.tregulov.parameterized_class;
 
 public class ParameterizedClass2 {
 

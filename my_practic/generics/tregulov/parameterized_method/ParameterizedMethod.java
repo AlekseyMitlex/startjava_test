@@ -1,4 +1,4 @@
-package generics;
+package generics.tregulov.parameterized_method;
 
 import java.util.ArrayList;
 
@@ -23,6 +23,8 @@ public class ParameterizedMethod {
 }
 
 class GenMethod {
+
+    // Методо возвращает 2-й элемент
     public static <T> T getSecondElement(ArrayList<T> a1) {
         return a1.get(1);
     }
