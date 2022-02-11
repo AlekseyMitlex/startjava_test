@@ -1,4 +1,4 @@
-package generics;
+package generics.tregulov.type_erasure;
 
 import java.util.ArrayList;
 
@@ -12,6 +12,28 @@ public class TypeErasure {
         // Происходит стирание типов, без кастинга JVM al1.get(0)
         // видит, как объект
 //        int i = (Integer) al1.get(0);
-
     }
+}
+
+class info<T> {
+
+    private final T value;
+
+    public info(T value) {
+        this.value = value;
+    }
+
+    // Parametrizovannii Method
+    public <V> V abc(V val) {
+        return val;
+    }
+
+    public String toString() {
+        return "[{" + value + "}]";
+    }
+
+    public T getValue() {
+        return value;
+    }
+
 }

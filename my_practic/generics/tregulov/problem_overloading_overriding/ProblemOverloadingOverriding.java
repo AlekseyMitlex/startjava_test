@@ -1,4 +1,4 @@
-package generics;
+package generics.tregulov.problem_overloading_overriding;
 
 public class ProblemOverloadingOverriding {
     public static void main(String[] args) {
@@ -15,8 +15,8 @@ public class ProblemOverloadingOverriding {
         System.out.println(i);
     }
 
-    // JVM не видит <String> и <Integer>
-    // существует такая проблема у  Overloading methods
+    // TODO : JVM не видит <String> и <Integer> у Overloading methods
+    // существует такая проблема у Overloading methods
 //    public void abc(info1<String> info1) {
 //        String j = info1.getValue();
 //    }
@@ -53,7 +53,7 @@ class Parent {
 
 class Child extends Parent {
 
-    // JVM не видит <String> и <Integer>
+    // TODO : JVM не видит <String> и <Integer> у  Overriding methods
     // существует такая проблема у  Overriding methods
 //    public void abc(info1<Integer> info1) {
 //        Integer k = info1.getValue();
