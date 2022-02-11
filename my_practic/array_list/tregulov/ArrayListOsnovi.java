@@ -28,9 +28,14 @@ public class ArrayListOsnovi {
         // Т.к. он же автоматически расширяется, при добавлении новых
         // Возможно ради минимума
         ArrayList<String> list2 = new ArrayList<>(30);
+        list2.add("tratrrr");
 
         // Создаются разные объекты
+        System.out.println("// Создаются разные объекты = ***********");
         ArrayList<String> list5 = new ArrayList<>(list2);
+        list2.set(0, "1111");
+        System.out.println("list5 = " + list5);
+        System.out.println("list2 = " + list2);
         System.out.println(list5 == list2);
         list2.add("poka");
 
