@@ -1,4 +1,4 @@
-package array_example;
+package array;
 
 public class ArrayMaxMinElementMain {
     public static void maxMin(double[] array) {

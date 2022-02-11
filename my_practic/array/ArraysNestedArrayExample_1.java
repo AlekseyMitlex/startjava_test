@@ -1,4 +1,4 @@
-package array_example;
+package array;
 
 import java.util.Arrays;
 
@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @author pankaj
  *
  */
-public class ArraysNestedArrayExample_2 {
+public class ArraysNestedArrayExample_1 {
 
     public static void main(String[] args) {
         // Compare two nested arrays of type integer which are equal
@@ -16,13 +16,15 @@ public class ArraysNestedArrayExample_2 {
         int[] a2 = { 1, 2, 3 };
         Object[] b1 = {a1};
         Object[] b2 = {a2};
-        boolean equal = Arrays.deepEquals(b1, b2);
+        boolean equal = Arrays.equals(b1, b2);
 
         if (equal) {
             System.out.println("Arrays b1 and b2 are equal with Result : " + equal);
         } else {
             System.out.println("Arrays b1 and b2 are not equal with Result : " + equal);
         }
+
+
 
     }
 

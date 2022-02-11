@@ -1,4 +1,4 @@
-package array_example;
+package array;
 
 public class ArraysStringConstructorChar {
     public static void main(String[] args) {

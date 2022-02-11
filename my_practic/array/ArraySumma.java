@@ -1,4 +1,4 @@
-package array_example;
+package array;
 
 public class ArraySumma {
     public static void main(String[] args) {
