@@ -2,6 +2,8 @@ package array_list.tregulov;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Test2 {
 
@@ -114,15 +116,72 @@ public class Test2 {
         System.out.println(" ************************** Перевод ArrayList в Array массив **********");
 
         // TODO : toArray() - Object [] / toArray(DataType [] array) - DataType []
-        //  TODO : Перевод ArrayList в Array массив
+        //  Перевод ArrayList в Array массив
+        //  РАЗНИЦА ^ 1-й вариант возвращает Объекты, 2-й возвращает,
+        //  то что напишем вначале, в параметрах
+
+        // Output list2.toArray() - is massive Object
         Object[] array1 = list2.toArray();
+        // Красивый вывод 2 варианта:  1-й -
+        System.out.println("array1 = " + Arrays.toString(array1));
+        // 2-й
         for (Object o : array1) {
-            System.out.println(o);
+            System.out.print(o + " ");
         }
 
+        // toArray(DataType [] array) - DataType []
+        // 1-й
         ArrayList<StringBuilder> list5 = new ArrayList<>();
         StringBuilder[] array2 = list5.toArray(new StringBuilder[10]);
-        System.out.println("array2 = " + Arrays.toString(array2));
+        System.out.println("\n" + "array2 = " + Arrays.toString(array2));
+        // 2 - вариант
+        Object[] list10 = list2.toArray(new Object[5]);
+        for (Object o1 : list10) {
+            System.out.print(o1 + ", ");
+        }
+
+        // TODO : Arrays.asList(DataType []) - List<DataType>
+        //  - Эти копии связаны одними данными.
+        //  Изменяя любой индекс меняется и в другом
+        List list3 = Arrays.asList(list);
+        System.out.println("\n" + "list3 = " + list3);
+        list.remove(0);
+        System.out.println("\n" + "list3 = " + list3);
+
+        // TODO : Collections.sort(ArrayList<Datatype>) - void
+        //  Сортировка массива по порядку
+        String s = "A";
+        String s2 = "B";
+        String s3 = "C";
+        String s4 = "D";
+        ArrayList<String> list4 = new ArrayList<>();
+        list4.add(s3);
+        list4.add(s);
+        list4.add(s4);
+        list4.add(s2);
+        System.out.println("list4 = " + list4);
+        Collections.sort(list4);
+        System.out.println("list4 = " + list4);
+
+        // TODO : equals(ArrayList<Datatype>) - boolean
+        //  Равны или нет 2 шт Arraylist`a
+
+        ArrayList<String> list6 = list4;
+        System.out.println("list4.equals(list6) = " + list4.equals(list6));
+
+        // Даже новой созданные будут равны. потому что String мне кажется!!!!
+        ArrayList<String> list7 = new ArrayList<>();
+        list7.add(s3);
+        list7.add(s);
+        list7.add(s4);
+        list7.add(s2);
+        Collections.sort(list7);
+        System.out.println("list7 = " + list7);
+
+        System.out.println("list7.equals(list6) = " + list7.equals(list6));
+        System.out.println("list7.equals(list6) = " + list6.equals(list7));
+        System.out.println("list7.equals(list6) = " + list4.equals(list7));
+        System.out.println("list7.equals(list6) = " + list7.equals(list4));
 
 
     }
