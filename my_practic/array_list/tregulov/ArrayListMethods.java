@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class Test2 {
+public class ArrayListMethods {
 
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
