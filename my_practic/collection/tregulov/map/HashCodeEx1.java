@@ -7,6 +7,7 @@ public class HashCodeEx1 {
 
     public static void main(String[] args) {
         Map<Students, Double> map = new HashMap<>();
+        Map<Integer, String> map1 = new HashMap<>();
         Students st1 = new Students("Zaur", "Tregulov", 3);
         Students st2 = new Students("Maria", "Tregulov1", 1);
         Students st3 = new Students("Sergwey", "Tregulov2", 4);
