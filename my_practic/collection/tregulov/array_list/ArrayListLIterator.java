@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.ListIterator;
 
-public class ArrayListLiterator {
+public class ArrayListLIterator {
 
     public static void main(String[] args) {
 
@@ -36,7 +36,7 @@ public class ArrayListLiterator {
         while (it2.hasNext()) {
             it2.next();
             it2.remove();
-            System.out.println("it2.next() = " + it2.next());
+            System.out.println("list1 = " + list1);
         }
 
     }
