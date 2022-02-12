@@ -1,4 +1,4 @@
-package array_list.tregulov;
+package collection.tregulov.array_list;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,8 +29,8 @@ public class ArrayListMethods2 {
 
         System.out.println(" =******************** ");
         // TODO : retainAll(Collection <?> c ) - boolean
-        //  Если мы хотим в 1-й ArrayList, добавить элементы из второго
-        //  то остальные будут удалены
+        //  В 1-й ArrayList, остануться элементы, которых
+        //  нет во втором так же
         aI1.retainAll(aI2);
         System.out.println("aI1 = " + aI1);
 
@@ -49,8 +49,8 @@ public class ArrayListMethods2 {
         System.out.println("aI1 = " + aI1);
 
         // Это не отдельная сущность/List. Визуализация на экрану отдельного
-        // саблиста. Можно добавлять элементы через саблист, нельзя после
-        // через aI1
+        // саблиста. Можно добавлять элементы только через саблист, нельзя после
+        // через aI1. Иначе саблист перестанет работать
         List<String> sublist = aI1.subList(1, 4);
         System.out.println("sublist = " + sublist);
         sublist.add("ten");
@@ -61,13 +61,15 @@ public class ArrayListMethods2 {
         // TODO : toArray() - Object [] из АррейЛиста в массив объектов
         Object[] array = aI1.toArray();
         System.out.println("array = " + Arrays.toString(array));
-        // Если хотим создать массив типа String
+        // Если хотим создать массив типа String.
+        // [0] - писать так и не думать о размере массива
         String[] array1 = aI1.toArray(new String[15]);
         System.out.println("array1 = " + Arrays.toString(array1));
 
         // TODO : List.of(E.elements) - List<E>
         //        List.copyOf(Collection <E>c) - List<E>
-        //List.of(E.elements) - List<E>
+        // List.of(E.elements) - List<E>. т.о. Можно быстро создать лист.
+        // Но изменять его НЕЛЬЗЯ
         List<String> list = List.of("odin", "dva", "tri");
         System.out.println("list = " + list);
         // List.copyOf(Collection <E>c) - List<E>

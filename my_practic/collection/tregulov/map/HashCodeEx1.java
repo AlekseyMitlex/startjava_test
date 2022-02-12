@@ -1,4 +1,4 @@
-package map_interface;
+package collection.tregulov.map;
 
 import java.util.HashMap;
 import java.util.Map;

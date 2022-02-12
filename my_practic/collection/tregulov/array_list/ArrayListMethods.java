@@ -1,4 +1,4 @@
-package array_list.tregulov;
+package collection.tregulov.array_list;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -36,17 +36,17 @@ public class ArrayListMethods {
             System.out.println(s + " ");
         }
 
-        // TODO : get(index)
+        // TODO : get(index) - вывести все элементы
         for (int i = 0; i < list.size(); i++) {
             System.out.print(i + ", ");
         }
         System.out.println("\n" + "list.get = " + list.get(3));
 
-        // TODO : get(index) - заменить индекс на новый
+        // TODO : set(index) - заменить индекс на новый
         list.set(1, "!!!");
         System.out.println("list = " + list);
 
-        // TODO : remove(Object) / remove(index)
+        // TODO : remove(Object) / remove(index) - элемент удалить
         list.remove(2);
         System.out.println("list = " + list);
         list.remove("!!!");
@@ -56,7 +56,7 @@ public class ArrayListMethods {
         System.out.println("list = " + list);
         System.out.println("******************** = ");
 
-        // TODO : addAll(ArrayList aL) / addAll(index, ArrayList aL) объединяет коллекциии
+        // TODO : addAll(ArrayList aL) / addAll(index, ArrayList aL) объединяет коллекции
         ArrayList<String> list2 = new ArrayList<>();
         list2.add("Petrov");
         list2.add("Sidorov");
@@ -80,7 +80,7 @@ public class ArrayListMethods {
         list.add(s1);
         list.add("poka");
         System.out.println("list = " + list);
-        System.out.println(" ======================= ");
+        System.out.println(" IndexOf(Object) - int======================= ");
 
         // TODO : IndexOf(Object) - int
         System.out.println(list.indexOf(s1));
@@ -88,7 +88,7 @@ public class ArrayListMethods {
         System.out.println("carrs = " + carrs);
         System.out.println(carrs.indexOf(carr1));
 
-        // TODO : lastIndexOf(Object) - int - выдаёт самый последний индекс искомы в коллекции
+        // TODO : lastIndexOf(Object) - int - выдаёт самый последний индекс искомый в коллекции
         // -1 если не нашел индекс
         System.out.println(list.lastIndexOf(s1));
         System.out.println(list.lastIndexOf("poka"));
