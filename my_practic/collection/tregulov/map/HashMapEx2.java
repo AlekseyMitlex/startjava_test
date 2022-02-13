@@ -31,7 +31,24 @@ public class HashMapEx2 {
         System.out.println("map1.remove(15879) = " + map1.remove(15879));
         System.out.println("map1 = " + map1);
 
-        // TODO : containsValue
+        // TODO : containsValue - проверяет по значению элемент в Hashmap
+        System.out.println("map1.containsValue(\"Ivan Ivanov\") = " + map1.containsValue("Ivan Ivanov"));
+
+        // TODO : containsKey - - проверяет по ключу элемент в Hashmap
+        System.out.println("map1.containsKey(1000) = " + map1.containsKey(1000));
+
+        // TODO : keySet - возвращает множество ключей.
+        System.out.println("map1.keySet() = " + map1.keySet());
+
+        // TODO : values - возвращает множество значений
+        System.out.println("map1.values() = " + map1.values());
+
+        // TODO : Дженерикс могут быть одинаковы
+        Map<String, String> map2 = new HashMap<>();
+
+        map2.put("Sasha", "Dobtii");
+        map2.put("Misha", "Umniy");
+        System.out.println("map2 = " + map2);
 
 
     }
