@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class LinkedListEx {
 
-    // TODO : коллекция хранящая последовательность элементов,
+    //  TODO : коллекция хранящая последовательность элементов,
     //  FIFO - добавляет в конец очереди, используется из начала очереди
     public static void main(String[] args) {
         Queue<String> queue = new LinkedList<>();
