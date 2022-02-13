@@ -1,4 +1,4 @@
-package collection.tregulov.array_list;
+package collection.tregulov.list;
 
 import java.util.ArrayList;
 import java.util.List;
