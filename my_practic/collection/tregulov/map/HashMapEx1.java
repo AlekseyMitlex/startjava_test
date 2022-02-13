@@ -3,7 +3,7 @@ package collection.tregulov.map;
 import java.util.HashMap;
 import java.util.Map;
 
-public class HashCodeEx1 {
+public class HashMapEx1 {
 
     public static void main(String[] args) {
         Map<Students, Double> map = new HashMap<>();

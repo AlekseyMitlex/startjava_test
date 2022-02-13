@@ -3,10 +3,17 @@ package collection.tregulov.map;
 import java.util.HashMap;
 import java.util.Map;
 
-public class HashMapEx2 {
+public class HashMapMethods {
 
     public static void main(String[] args) {
         Map<Integer, String> map1 = new HashMap<>();
+
+        // TODO : Размер массива и фактор при котором массив увеличиться вдвое,
+        //  в данном случае, при заполнении 12(16*0,75)
+        //  Чем больше capacity занимает памяти, тем быстрее будет поиск,
+        //  потому что меньше будут образовываться LinkeList`i в конкретной позиции.
+        //  Вывод: жертвуем памятью, но выигрываем в скорости доступа к элементу
+        Map<Integer, String> map3 = new HashMap<>(16, 0.75f);
 
         // TODO : ключи должны быть уникальными, может быть null
         //        значения могут повторяться, могут быть null
@@ -49,6 +56,11 @@ public class HashMapEx2 {
         map2.put("Sasha", "Dobtii");
         map2.put("Misha", "Umniy");
         System.out.println("map2 = " + map2);
+
+        // TODO : setEntry - возвращает множество элементов из HashMap
+        for (Map.Entry<Integer, String> entry : map1.entrySet()) {
+            System.out.println("entry.getKey() + \":\" + entry.getValue() = " + entry.getKey() + ":" + entry.getValue());
+        }
 
 
     }
