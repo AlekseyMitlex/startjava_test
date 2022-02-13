@@ -1,4 +1,4 @@
-package collection.tregulov.map;
+package collection.tregulov.map.tree_map;
 
 import java.util.TreeMap;
 
@@ -65,8 +65,6 @@ public class TreeMapEx1 {
         treeMap.put(7.9, st5);
         treeMap.put(8.2, st6);
         treeMap.put(9.1, st7);
-
-
     }
 }
 
