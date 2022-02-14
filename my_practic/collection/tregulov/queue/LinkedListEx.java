@@ -6,7 +6,7 @@ import java.util.Queue;
 public class LinkedListEx {
 
     //  TODO : коллекция хранящая последовательность элементов,
-    //  FIFO - добавляет в конец очереди, используется из начала очереди
+    //   FIFO - добавляет в конец очереди, используется из начала очереди
     public static void main(String[] args) {
         Queue<String> queue = new LinkedList<>();
 
@@ -28,7 +28,7 @@ public class LinkedListEx {
         queue.offer("Alrksandr");
         System.out.println("queue = " + queue);
 
-        // TODO : remove - удаляетя Zaur, первый в списке и т.д. ро очереди ближе к концу,
+        // TODO : remove - удаляет Zaur, первый в списке и т.д. по очереди ближе к концу,
         //  можно удалить из середины, но Que не предназчен для такого и теряется весь
         //  смысл использования, проще использовать другой List
         System.out.println("queue.remove() = " + queue.remove());
