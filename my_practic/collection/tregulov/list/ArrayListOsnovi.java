@@ -5,6 +5,8 @@ import java.util.List;
 
 public class ArrayListOsnovi {
 
+    // TODO : List - упорядоченный список, в котором у каждого элемента есть индекс.
+    //  Дубликаты значений допускаются.
     public static void main(String[] args) {
         ArrayList list = new ArrayList();
 

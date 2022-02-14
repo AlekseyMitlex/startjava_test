@@ -7,7 +7,8 @@ public class HashSetEx {
 
     public static void main(String[] args) {
 
-        // TODO : Не допускает дубликатов, при этом могут быть null,
+        // TODO : Не допускает дубликатов, неупорядоченное множество,
+        //  могут быть null,
         //  ключи это элементы HashSet, константа - заглушка
         Set<String> set = new HashSet<>();
 
