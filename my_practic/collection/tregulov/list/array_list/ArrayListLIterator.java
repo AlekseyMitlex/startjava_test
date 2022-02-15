@@ -1,4 +1,4 @@
-package collection.tregulov.list;
+package collection.tregulov.list.array_list;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -31,7 +31,7 @@ public class ArrayListLIterator {
             System.out.println("it1.next() = " + it1.next());
         }
 
-        // TODO : Вывести на экрfy элемент и удалить
+        // TODO : Вывести на экран элемент и удалить
         Iterator<String> it2 = list1.iterator();
         while (it2.hasNext()) {
             it2.next();

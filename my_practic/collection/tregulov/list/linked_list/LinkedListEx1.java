@@ -1,13 +1,13 @@
-package collection.tregulov.linked_list;
+package collection.tregulov.list.linked_list;
 
 import java.util.LinkedList;
 
 public class LinkedListEx1 {
     // TODO : Общий вывод
-//  LinkedList - стоит использовать когда:
-//  get(поиск) по минимуму, а remove/add максимум потому,что
-//  просто меняются ссылки, массив не сдвигается.
-//  В остальных случаях только ArrayList
+    //  LinkedList - стоит использовать когда:
+    //  get(поиск) по минимуму, а remove/add максимум потому,что
+    //  просто меняются ссылки, массив не сдвигается.
+    //  В остальных случаях только ArrayList
     public static void main(String[] args) {
         Student2 st1 = new Student2("Ivan", 3);
         Student2 st2 = new Student2("Nikolay", 2);
