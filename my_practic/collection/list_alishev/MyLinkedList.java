@@ -56,13 +56,20 @@ public class MyLinkedList {
         int currentIndex = 0;
         Node temp = head;
 
+        if (index == 0) {
+            head = head.getNext();
+            size--;
+        }
+
         while (temp != null) {
             // Находясь в удаляемом элементе, удалить его нельзя,
             // поэтому мы находимся в предыдущем и используем +1 (как будто в нужном)
-            if ((currentIndex + 1) == index) {
+            if (currentIndex == index - 1) {
                 // Изменяем ссылку на(Получаем ссылку из предыдущего на нужный(который удаляем)
                 // и на его ссылку, на следующий за ним
                 temp.setNext(temp.getNext().getNext());
+                size--;
+                return;
             } else {
                 temp = temp.getNext();
                 currentIndex++;
@@ -124,5 +131,7 @@ class Test {
 
         System.out.println("myLinkedList = " + myLinkedList);
         System.out.println("myLinkedList.get(2) = " + myLinkedList.get(2));
+        myLinkedList.remove(2);
+        System.out.println("myLinkedList = " + myLinkedList);
     }
 }
