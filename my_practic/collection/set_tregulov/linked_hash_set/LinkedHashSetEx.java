@@ -1,4 +1,4 @@
-package collection.set.linked_hash_set;
+package collection.set_tregulov.linked_hash_set;
 
 import java.util.LinkedHashSet;
 

@@ -1,4 +1,4 @@
-package collection.set.hash_set;
+package collection.set_tregulov.hash_set;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -7,7 +7,7 @@ public class HashSetEx {
 
     public static void main(String[] args) {
 
-        // TODO : Не допускает дубликатов, неупорядоченное множество,
+        //  Не допускает дубликатов, неупорядоченное множество,
         //  могут быть null,
         //  ключи это элементы HashSet, константа - заглушка
         Set<String> set = new HashSet<>();

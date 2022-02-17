@@ -1,4 +1,4 @@
-package collection.set.hash_set;
+package collection.set_tregulov.hash_set;
 
 import java.util.HashSet;
 

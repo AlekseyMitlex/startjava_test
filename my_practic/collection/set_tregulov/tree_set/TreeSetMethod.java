@@ -1,4 +1,4 @@
-package collection.set.tree_set;
+package collection.set_tregulov.tree_set;
 
 import java.util.Objects;
 import java.util.TreeSet;
