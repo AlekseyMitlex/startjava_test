@@ -19,14 +19,21 @@ public class HashSetLinkedHashSetTreeSet {
         // Пары (ключ) сортируются по ключу (естественный порядок)
         Set<String> treeSet = new TreeSet<>();
 
-        treeSet.add("Mike");
-        treeSet.add("Katy");
-        treeSet.add("Tom");
-        treeSet.add("George");
-        treeSet.add("Donald");
+        hashSet.add("Mike");
+        hashSet.add("Katy");
+        hashSet.add("Tom");
+        hashSet.add("George");
+        hashSet.add("Donald");
+        hashSet.add("Tom");
+        hashSet.add("Tom");
 
-        for (String name : treeSet) {
+        for (String name : hashSet) {
             System.out.println("s = " + name);
         }
+
+        // Работает очень быстро этот метод в Set. О(1)
+        System.out.println(hashSet.contains("Tom"));
+
+        System.out.println("hashSet = " + hashSet.isEmpty());
     }
 }

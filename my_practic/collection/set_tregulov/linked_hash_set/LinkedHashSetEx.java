@@ -5,7 +5,7 @@ import java.util.LinkedHashSet;
 public class LinkedHashSetEx {
 
     public static void main(String[] args) {
-        //TODO: порядок добавления, в основе лежит HashMap,
+        // порядок добавления, в основе лежит HashMap,
         // ключи - элементы, значения - это константа - заглушка
         LinkedHashSet<Integer> lhs = new LinkedHashSet();
         lhs.add(5);

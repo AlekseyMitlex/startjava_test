@@ -6,7 +6,7 @@ import java.util.TreeSet;
 public class TreeSetEx1 {
 
     public static void main(String[] args) {
-        // TODO : Хранит элементы сортируя по возрастанию, в основе лежит TreeMap,
+        //  Хранит элементы сортируя по возрастанию, в основе лежит TreeMap,
         //  ключи это элементы, а значения - это константа - заглушка,
         //  не хранит null
         Set<Integer> treeSet = new TreeSet<>();
@@ -18,7 +18,7 @@ public class TreeSetEx1 {
 
         System.out.println("treeSet = " + treeSet);
 
-        // TODO : Методы теже самые
+        // Методы теже самые
         System.out.println("treeSet.remove(2) = " + treeSet.remove(2));
         System.out.println("treeSet.contains(2) = " + treeSet.contains(2));
         System.out.println("treeSet = " + treeSet);

@@ -12,7 +12,7 @@ public class HashSetEx {
         //  ключи это элементы HashSet, константа - заглушка
         Set<String> set = new HashSet<>();
 
-        // TODO : add - тоже, что и put
+        // add - тоже, что и put
         set.add("Zaur");
         set.add("Oleg");
         set.add("Marina");
@@ -20,13 +20,13 @@ public class HashSetEx {
 //        set.add(null);
         System.out.println("set = " + set);
 
-        // TODO : remove - удалить
+        // remove - удалить
         System.out.println("set.remove(\"Zaur\") = " + set.remove("Zaur"));
-        // TODO : size - количество элементов
+        // size - количество элементов
         System.out.println("set.size = " + set.size());
-        // TODO : isEmpty - пусто ли наш Set?
+        // isEmpty - пусто ли наш Set?
         System.out.println("set.isEmpty() = " + set.isEmpty());
-        // TODO : contains - хранится ли элемент?
+        // contains - хранится ли элемент?
         System.out.println("set.contains(\"Marina\") = " + set.contains("Marina"));
 
 

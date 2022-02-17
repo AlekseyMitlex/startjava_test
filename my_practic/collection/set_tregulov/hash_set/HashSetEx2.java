@@ -19,17 +19,17 @@ public class HashSetEx2 {
         hashSet2.add(1);
         hashSet2.add(8);
 
-        // TODO : adAll - объединяет 2 множества в 1, при этом без дубликатов
+        // adAll - объединяет 2 множества в 1, при этом без дубликатов
         HashSet<Integer> union = new HashSet<>(hashSet1);
         union.addAll(hashSet2);
         System.out.println("union = " + union);
 
-        // TODO : retainAll - оставляет пересечение множеств, т.е. те что совпадают из 2-х множеств
+        // retainAll - оставляет пересечение множеств, т.е. те что совпадают из 2-х множеств
         HashSet<Integer> intersect = new HashSet<>(hashSet1);
         intersect.retainAll(hashSet2);
         System.out.println("intersect = " + intersect);
 
-        // TODO : removeAll - удалить из 1 множества все элементы 2-го
+        // removeAll - удалить из 1 множества все элементы 2-го
         HashSet<Integer> substruct = new HashSet<>(hashSet1);
         substruct.removeAll(hashSet2);
         System.out.println("substruct = " + substruct);
