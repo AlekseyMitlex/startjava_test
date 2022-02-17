@@ -1,4 +1,4 @@
-package collection.map.hash_map;
+package collection.map_tregulov.hash_map;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,15 +8,15 @@ public class HashMapMethods {
     public static void main(String[] args) {
         Map<Integer, String> map1 = new HashMap<>();
 
-        // TODO : Размер массива и фактор при котором массив увеличиться вдвое,
+        //  Размер массива и фактор при котором массив увеличиться вдвое,
         //  в данном случае, при заполнении 12(16*0,75)
         //  Чем больше capacity занимает памяти, тем быстрее будет поиск,
         //  потому что меньше будут образовываться LinkeList`i в конкретной позиции.
         //  Вывод: жертвуем памятью, но выигрываем в скорости доступа к элементу
         Map<Integer, String> map3 = new HashMap<>(16, 0.75f);
 
-        // TODO : неупорядочное хранение, ключи должны быть уникальными, может быть null
-        //        значения могут повторяться, могут быть null
+        // неупорядоченное хранение, ключи должны быть уникальными, может быть null
+        // значения могут повторяться, могут быть null
         map1.put(1000, "Zaur Tregulov");
         map1.put(3568, "Ivan Ivanov");
         map1.put(6578, "Maria Sidorova");

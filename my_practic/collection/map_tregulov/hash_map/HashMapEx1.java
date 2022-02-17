@@ -1,4 +1,4 @@
-package collection.map.hash_map;
+package collection.map_tregulov.hash_map;
 
 import java.util.HashMap;
 import java.util.Map;

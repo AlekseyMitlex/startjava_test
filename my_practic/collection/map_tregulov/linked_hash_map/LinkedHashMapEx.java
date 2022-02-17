@@ -1,4 +1,4 @@
-package collection.map.linked_hash_map;
+package collection.map_tregulov.linked_hash_map;
 
 import java.util.LinkedHashMap;
 

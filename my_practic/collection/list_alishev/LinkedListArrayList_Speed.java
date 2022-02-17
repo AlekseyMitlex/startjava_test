@@ -3,7 +3,7 @@ package collection.list_alishev;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LinkedListVsArrayList {
+public class LinkedListArrayList_Speed {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package collection.map.tree_map;
+package collection.map_tregulov.tree_map;
 
 import java.util.TreeMap;
 
