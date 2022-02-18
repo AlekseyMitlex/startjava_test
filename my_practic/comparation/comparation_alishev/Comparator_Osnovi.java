@@ -5,6 +5,16 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+
+// Если стандартная сортировка не устраивает, необходимо 2 способа:
+// 1-й
+//  - Создать класс
+//  - implements Comparator
+//  - Переопределить метод compare
+// 2-й
+//  - Создать прямо в методе Collections.sort -
+//  Анонимный класс и реализовать его
+
 public class Comparator_Osnovi {
 
     public static void main(String[] args) {
@@ -18,6 +28,7 @@ public class Comparator_Osnovi {
         animals.add("bird");
         animals.add("b");
 
+        // 1-й способ
         // Сортировка по лексикографическому порядку
         Collections.sort(animals, new StringlengthComparator());
         System.out.println("animals = " + animals);
@@ -28,13 +39,25 @@ public class Comparator_Osnovi {
         numbers.add(500);
         numbers.add(100);
 
-        Collections.sort(numbers, new BackwardsInegerComparator());
+        // 2-й способ
+        // Сортировка - в обратную, т.е от большего к меньшему по числу
+        Collections.sort(numbers, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                if (o1 > o2) {
+                    return -1;
+                } else if (o1 < o2) {
+                    return 1;
+                } else {
+                    return 0;
+                }
+            }
+        });
         System.out.println("numbers = " + numbers);
     }
 }
 
-// Если стандартная сортировка не устраивает, необходимо -
-// implements Comparator и переопределить сортировку - по длине(количеству) символов
+//  Сортировка - по длине(количеству) символов
 class StringlengthComparator implements Comparator<String> {
 
 
@@ -44,28 +67,13 @@ class StringlengthComparator implements Comparator<String> {
         o1 == o2 = 0;   compare(1, 1) => 0;
     */
     // Идёт сравнение 0 индекса с 1, т.к. сортировка по возрастанию,
-    // если необходимо меняет места, далее сравнивает 1 со 2 и т.д.
+    // если необходимо менять места, далее сравнивает 1 со 2 и т.д.
     @Override
     public int compare(String o1, String o2) {
         if (o1.length() > o2.length()) {
             return 1;
         } else if (o1.length() < o2.length()) {
             return -1;
-        } else {
-            return 0;
-        }
-    }
-}
-
-// сортировка - в обратную, т.е от большего к меньшему по числу
-class BackwardsInegerComparator implements Comparator<Integer> {
-
-    @Override
-    public int compare(Integer o1, Integer o2) {
-        if (o1 > o2) {
-            return -1;
-        } else if (o1 < o2) {
-            return 1;
         } else {
             return 0;
         }
