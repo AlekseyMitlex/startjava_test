@@ -1,4 +1,4 @@
-package collection.stack;
+package collection.stack_tregulov;
 
 import java.util.Stack;
 
@@ -12,7 +12,7 @@ public class StackEx2 {
         stack.push("Katya");
         System.out.println("stack = " + stack);
 
-        // TODO : pop -возвращает элемент, который находится на самом верху стека
+        //  pop -возвращает элемент, который находится на самом верху стека
         //  и сразу его удаляет
         System.out.println("stack.pop() = " + stack.pop());
         System.out.println("stack = " + stack);
@@ -28,7 +28,7 @@ public class StackEx2 {
         stack.push("Oleg");
         stack.push("Katya");
 
-        // TODO : peek() -возвращает элемент, который находится на самом верху стека
+        // peek() -возвращает элемент, который находится на самом верху стека
         System.out.println("stack.peek() = " + stack.peek());
     }
 }

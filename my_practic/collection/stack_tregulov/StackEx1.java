@@ -1,8 +1,8 @@
-package collection.stack;
+package collection.stack_tregulov;
 
 public class StackEx1 {
 
-    // TODO : Пример LIFO работа метода, последний пришел и первый ушёл
+    // Пример LIFO работа метода, последний пришел и первый ушёл
     static void abc1() {
         System.out.println("abc1 starts");
         System.out.println("abc1 end");
