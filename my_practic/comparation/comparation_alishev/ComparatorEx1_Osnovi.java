@@ -15,7 +15,7 @@ import java.util.List;
 //  - Создать прямо в методе Collections.sort -
 //  Анонимный класс и реализовать его
 
-public class Comparator_Osnovi {
+public class ComparatorEx1_Osnovi {
 
     public static void main(String[] args) {
         List<String> animals = new ArrayList<>();
