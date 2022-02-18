@@ -1,17 +1,17 @@
-package collection.queue;
+package collection.queue_tregulov;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class ArrayDequeEx {
 
-    // TODO : Двунаправленная очередь, могут использоваться
+    //  Двунаправленная очередь, могут использоваться
     //  и добавляться элементы с обоих концов.
     //  Работают оба правила FIFO - LIFO
     public static void main(String[] args) {
         Deque<Integer> deque = new ArrayDeque<>();
 
-        // TODO addFirst/addLast добавления элементов, вначало/конец списка,
+        //  addFirst/addLast добавления элементов, вначало/конец списка,
         //  есть offerLast/offerFirst - добавления в начало/конец с ограничениями
         deque.addFirst(3);
         deque.addFirst(5);
@@ -20,7 +20,7 @@ public class ArrayDequeEx {
         deque.addLast(8);
         System.out.println("deque = " + deque);
 
-        // TODO removeFirst/removeLast удалить первый/последний элемент,
+        //  removeFirst/removeLast удалить первый/последний элемент,
         //  poolFirst/poolLast удалить первый/последний элемент,
         //  без эксцепшн, когда нечего удалять и выводит null
         System.out.println("deque.removeFirst() = " + deque.removeFirst());
@@ -28,7 +28,7 @@ public class ArrayDequeEx {
         System.out.println("deque.pollFirst() = " + deque.pollFirst());
         System.out.println("deque.pollLast() = " + deque.pollLast());
 
-        // TODO getFirst/getLast выводит первый/последний элемент,
+        //  getFirst/getLast выводит первый/последний элемент,
         //  peeklFirst/peeklLast удалить первый/последний элемент,
         //  без эксцепшн, когда нечего удалять и выводит null
 

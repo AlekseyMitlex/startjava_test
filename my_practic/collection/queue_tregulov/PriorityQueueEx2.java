@@ -1,4 +1,4 @@
-package collection.queue;
+package collection.queue_tregulov;
 
 import java.util.Objects;
 import java.util.PriorityQueue;
@@ -20,7 +20,7 @@ public class PriorityQueueEx2 {
 
         System.out.println("priorityQueue = " + priorityQueue);
 
-        // TODO : pool() удаляет сначала с наивысшим приоритетом(по курсу),
+        //  pool() удаляет сначала с наивысшим приоритетом(по курсу),
         //  когда нечего удалять - не будет эксцепшн и выводит null
         System.out.println("priorityQueue.poll() = " + priorityQueue.poll());
         System.out.println("priorityQueue.poll() = " + priorityQueue.poll());
