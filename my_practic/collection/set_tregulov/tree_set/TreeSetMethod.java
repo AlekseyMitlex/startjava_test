@@ -20,20 +20,20 @@ public class TreeSetMethod {
 
         System.out.println("treeSet = " + treeSet);
 
-        // TODO : first первый по сортировке курса
+        // first первый по сортировке курса
         System.out.println("treeSet.first() = " + treeSet.first());
-        // TODO : last последний по сортировке курса
+        // last последний по сортировке курса
         System.out.println("treeSet.last() = " + treeSet.last());
-        // TODO : headSet вывести кто в сортировке имеет < значение по курсу
+        // headSet вывести кто в сортировке имеет < значение по курсу
         Student st6 = new Student("Oleg", 3);
         System.out.println("treeSet.headSet = " + treeSet.headSet(st6));
-        // TODO : tailSet вывести кто в сортировке имеет >= значение по курсу
+        // tailSet вывести кто в сортировке имеет >= значение по курсу
         System.out.println("treeSet.tailSet = " + treeSet.tailSet(st6));
-        // TODO : subSet вывести range (>= и <) значения по курсу
+        // subSet вывести range (>= и <) значения по курсу
         Student st7 = new Student("Petya", 2);
         Student st8 = new Student("Ivan", 4);
         System.out.println("treeSet.subSet = " + treeSet.subSet(st7, st8));
-        // TODO : equals проверка, равные курсы
+        // equals проверка, равные курсы
         System.out.println("st7.equals(st3) = " + st3.equals(st7));
         System.out.println(st7.hashCode() == st3.hashCode());
     }
@@ -63,7 +63,7 @@ class Student implements Comparable<Student> {
                 '}';
     }
 
-    // TODO : Все убираем, кроме return course == student.course;
+    //  Все убираем, кроме return course == student.course;
     //  чтобы всё было в соответствии с нашими параметрами в compareTo
     @Override
     public boolean equals(Object o) {

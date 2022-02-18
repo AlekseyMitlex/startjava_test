@@ -18,7 +18,7 @@ public class TreeSetEx1 {
 
         System.out.println("treeSet = " + treeSet);
 
-        // Методы теже самые
+        // Методы те же самые
         System.out.println("treeSet.remove(2) = " + treeSet.remove(2));
         System.out.println("treeSet.contains(2) = " + treeSet.contains(2));
         System.out.println("treeSet = " + treeSet);

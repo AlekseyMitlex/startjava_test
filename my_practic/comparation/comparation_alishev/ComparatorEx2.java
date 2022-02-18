@@ -7,7 +7,7 @@ import java.util.List;
 
 // Реализация сравнения 2-х объектов,
 // 2-й способ compare без создания класса
-public class ComparatorEx2_Osnovi {
+public class ComparatorEx2 {
 
     public static void main(String[] args) {
         List<Person> people = new ArrayList<>();

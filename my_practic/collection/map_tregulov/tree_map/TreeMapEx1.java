@@ -6,7 +6,7 @@ public class TreeMapEx1 {
 
     public static void main(String[] args) {
 
-        // TODO : Хранятся в отсортированном порядке по возрастанию.
+        //  Хранятся в отсортированном порядке по возрастанию.
         //  В основе лежит красно-чёрное дерево, метод быстрый, но медленнее чем HashMap
         TreeMap<Double, Student> treeMap = new TreeMap<>();
 
@@ -27,9 +27,9 @@ public class TreeMapEx1 {
         treeMap.put(7.9, st5);
 
         System.out.println("treeMap = " + treeMap);
-        // TODO : get
+        // get
         System.out.println("treeMap.get(6.4) = " + treeMap.get(6.4));
-        // TODO : remove
+        // remove
         System.out.println("treeMap.remove = " + treeMap.remove(5.8));
 
         // перезаписал
@@ -41,20 +41,20 @@ public class TreeMapEx1 {
         treeMap.put(8.2, st6);
         treeMap.put(7.9, st5);
 
-        // TODO : descendingMap()  сортировка по убыванию ключей
+        // descendingMap()  сортировка по убыванию ключей
         System.out.println("treeMap.descendingMap() = " + treeMap.descendingMap());
 
-        // TODO : tailMap() нахождение range - отрезков у кого больше ключ чем...
+        // tailMap() нахождение range - отрезков у кого больше ключ чем...
         // вывод всех кто больше > 7.3
         System.out.println("treeMap.tailMap = " + treeMap.tailMap(7.3));
 
-        // TODO : headMap() нахождение range - отрезков у кого меньше ключ чем...
+        // headMap() нахождение range - отрезков у кого меньше ключ чем...
         System.out.println("treeMap.headMap = " + treeMap.headMap(7.3));
 
-        // TODO : lastEntry() поиск элемента в самом конце с самым большим ключем
+        // lastEntry() поиск элемента в самом конце с самым большим ключем
         System.out.println("treeMap = " + treeMap.lastEntry());
 
-        // TODO : firstEntry() поиск элемента в самом начале с самым меньшим ключем
+        // firstEntry() поиск элемента в самом начале с самым меньшим ключем
         System.out.println("treeMap.firstEntry() = " + treeMap.firstEntry());
 
         // Перезаписываем по возрастанию
