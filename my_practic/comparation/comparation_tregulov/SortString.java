@@ -1,4 +1,4 @@
-package comparation;
+package comparation.comparation_tregulov;
 
 import java.util.ArrayList;
 import java.util.Collections;
