@@ -7,7 +7,7 @@ public class LinkedListArrayList_Speed {
 
     public static void main(String[] args) {
 
-        // TODO : Сравнение LinkedList и ArrayList
+        // Сравнение LinkedList и ArrayList
         List<Integer> linkedList = new java.util.LinkedList<>();
         List<Integer> arrayList = new ArrayList<>();
 
@@ -17,7 +17,7 @@ public class LinkedListArrayList_Speed {
 
     private static void measureTime(List<Integer> list) {
 
-        // TODO: add() Заполняем нулями, значения ставим в конец листа 10 и 5
+        // add() Заполняем нулями, значения ставим в конец листа 10 и 5
 //        long start = System.currentTimeMillis();
 //
 //        for (int i = 0; i < 100000; i++) {
@@ -27,7 +27,7 @@ public class LinkedListArrayList_Speed {
 //        long end = System.currentTimeMillis();
 //        System.out.println(end - start);
 
-        // TODO: add(index) Заполняем, значения ставим в конец листа 10 и 773
+        // add(index) Заполняем, значения ставим в конец листа 10 и 773
         long start2 = System.currentTimeMillis();
 
         for (int i = 0; i < 100000; i++) {
@@ -38,7 +38,7 @@ public class LinkedListArrayList_Speed {
         long end2 = System.currentTimeMillis();
         System.out.println(end2 - start2);
 
-        // TODO: get() получаем данные 3670 и 5
+        //  get() получаем данные 3670 и 5
 //        long start1 = System.currentTimeMillis();
 //
 //        for (int i = 0; i < 100000; i++) {

@@ -1,4 +1,4 @@
-package collection;
+package collection.intuit;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -18,6 +18,8 @@ public class CollectionLinkedList_Intuit {
         ll.addFirst("Element2");
         ll.addFirst("Element3");
         ll.addLast("Element4");
+
+        System.out.println("test = " + test);
 
         System.out.println("ll = " + ll);
 

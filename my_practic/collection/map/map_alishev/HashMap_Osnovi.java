@@ -17,6 +17,7 @@ public class HashMap_Osnovi {
 
         System.out.println("map = " + map);
 
+        // Перезапишет Value
         map.put(3, "Другое значение для ключа три");
         System.out.println("map = " + map);
 
