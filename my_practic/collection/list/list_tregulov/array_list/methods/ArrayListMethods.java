@@ -22,7 +22,7 @@ public class ArrayListMethods {
 
         String s1 = new String("lol1");
 
-        // TODO : add()
+        //  add()
         list.add(new String("lol"));
         list.add("poka");
         list.add("privet");
@@ -30,23 +30,23 @@ public class ArrayListMethods {
         list.add("poka");
         list.add(s1);
 
-        // TODO : add(index)
+        //  add(index)
         list.add(1, "hello");
         for (String s : list) {
             System.out.println(s + " ");
         }
 
-        // TODO : get(index) - вывести все элементы
+        //  get(index) - вывести все элементы
         for (int i = 0; i < list.size(); i++) {
             System.out.print(i + ", ");
         }
         System.out.println("\n" + "list.get = " + list.get(3));
 
-        // TODO : set(index) - заменить индекс на новый
+        //  set(index) - заменить индекс на новый
         list.set(1, "!!!");
         System.out.println("list = " + list);
 
-        // TODO : remove(Object) / remove(index) - элемент удалить
+        //  remove(Object) / remove(index) - элемент удалить
         list.remove(2);
         System.out.println("list = " + list);
         list.remove("!!!");
@@ -56,7 +56,7 @@ public class ArrayListMethods {
         System.out.println("list = " + list);
         System.out.println("******************** = ");
 
-        // TODO : addAll(ArrayList aL) / addAll(index, ArrayList aL) объединяет коллекции
+        //  addAll(ArrayList aL) / addAll(index, ArrayList aL) объединяет коллекции
         ArrayList<String> list2 = new ArrayList<>();
         list2.add("Petrov");
         list2.add("Sidorov");
@@ -68,11 +68,11 @@ public class ArrayListMethods {
         list.addAll(1, list2);
         System.out.println("list = " + list);
 
-        // TODO : clear() - void быстро очищает ArrayList
+        //  clear() - void быстро очищает ArrayList
         list.clear();
         System.out.println("list = " + list);
 
-        // TODO : Обновка
+        //  Обновка
         list.add(new String("lol"));
         list.add("poka");
         list.add("privet");
@@ -82,40 +82,40 @@ public class ArrayListMethods {
         System.out.println("list = " + list);
         System.out.println(" IndexOf(Object) - int======================= ");
 
-        // TODO : IndexOf(Object) - int
+        //  IndexOf(Object) - int
         System.out.println(list.indexOf(s1));
         System.out.println(list.indexOf("ok"));
         System.out.println("carrs = " + carrs);
         System.out.println(carrs.indexOf(carr1));
 
-        // TODO : lastIndexOf(Object) - int - выдаёт самый последний индекс искомый в коллекции
+        //  lastIndexOf(Object) - int - выдаёт самый последний индекс искомый в коллекции
         // -1 если не нашел индекс
         System.out.println(list.lastIndexOf(s1));
         System.out.println(list.lastIndexOf("poka"));
         System.out.println(list.lastIndexOf("poka!!!"));
 
-        // TODO : size() - int
+        //   size() - int
         System.out.println("list2.size() = " + list2.size());
 
-        // TODO : isEmpty() - int Пустой ли ArrayList
+        //   isEmpty() - int Пустой ли ArrayList
         System.out.println("list.isEmpty() = " + list.isEmpty());
 
-        // TODO : contains(Object) - проверяет есть ли объект в ArrayList
+        //   contains(Object) - проверяет есть ли объект в ArrayList
         System.out.println("list.contains(\"poka\") = " + list.contains("poka"));
         System.out.println("list.contains(\"poka\") = " + carrs.contains(carr2));
 
-        // TODO : toString()
+        //   toString()
         System.out.println("list2.toString() = " + list2.toString());
         System.out.println("list.toString() = " + list.toString());
         System.out.println("carrs.toString() = " + carrs.toString());
 
-        // TODO : clone() - Object при использовании StringBuilder,
-        // TODO : изменяемые элементы, меняются и в другой коллекции
+        //   clone() - Object при использовании StringBuilder,
+        //   изменяемые элементы, меняются и в другой коллекции
         ArrayList list1 = (ArrayList) carrs.clone();
         System.out.println("list1 = " + list1);
         System.out.println(" ************************** Перевод ArrayList в Array массив **********");
 
-        // TODO : toArray() - Object [] / toArray(DataType [] array) - DataType []
+        //   toArray() - Object [] / toArray(DataType [] array) - DataType []
         //  Перевод ArrayList в Array массив
         //  РАЗНИЦА ^ 1-й вариант возвращает Объекты, 2-й возвращает,
         //  то что напишем вначале, в параметрах
@@ -140,7 +140,7 @@ public class ArrayListMethods {
             System.out.print(o1 + ", ");
         }
 
-        // TODO : Arrays.asList(DataType []) - List<DataType>
+        //   Arrays.asList(DataType []) - List<DataType>
         //  - Эти копии связаны одними данными.
         //  Изменяя любой индекс меняется и в другом
         List list3 = Arrays.asList(list);
@@ -148,7 +148,7 @@ public class ArrayListMethods {
         list.remove(0);
         System.out.println("\n" + "list3 = " + list3);
 
-        // TODO : Collections.sort(ArrayList<Datatype>) - void
+        //   Collections.sort(ArrayList<Datatype>) - void
         //  Сортировка массива по порядку
         String s = "A";
         String s2 = "B";
@@ -163,7 +163,7 @@ public class ArrayListMethods {
         Collections.sort(list4);
         System.out.println("list4 = " + list4);
 
-        // TODO : equals(ArrayList<Datatype>) - boolean
+        //   equals(ArrayList<Datatype>) - boolean
         //  Равны или нет 2 шт Arraylist`a
 
         ArrayList<String> list6 = list4;
