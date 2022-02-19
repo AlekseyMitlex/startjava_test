@@ -1,4 +1,4 @@
-package collection.list.stack_alishev;
+package collection.list.list_alishev.stack_alishev;
 
 import java.util.Stack;
 

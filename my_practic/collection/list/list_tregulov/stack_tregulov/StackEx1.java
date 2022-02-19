@@ -1,4 +1,4 @@
-package collection.list.stack_tregulov;
+package collection.list.list_tregulov.stack_tregulov;
 
 public class StackEx1 {
 

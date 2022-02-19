@@ -1,9 +1,9 @@
-package collection.list.vector;
+package collection.list.list_tregulov.vector;
 
 import java.util.Vector;
 
 public class VectorEx1 {
-    // TODO : Общий вывод ArrayList всегда лучше. Vector устарел
+    //  Общий вывод ArrayList всегда лучше. Vector устарел
     public static void main(String[] args) {
         Vector<String> vector = new Vector<>();
         vector.add("Zaur");
