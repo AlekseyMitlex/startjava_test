@@ -1,9 +1,9 @@
-package codewar.kui8;
+package codewarEtc.codewar.kui8;
 
 /*Write a function called repeatStr which repeats the
  given string string exactly n times.
         repeatStr(6, "I") // "IIIIII"
-        repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"*/
+        repeatStr(5, "codewarEtc.etc.Hello") // "HelloHelloHelloHelloHello"*/
 
 public class Ex2 {
 

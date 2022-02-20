@@ -5,12 +5,12 @@ package annotation.topjava_blog.documented;
 // для метода doSomeTestDocumented(). Причина этому @Documented, прикрепленная
 // к нашей аннотации @TestDocumented. @TestNotDocumented не использует эту аннотацию.
 public class Tester {
-    @TestDocumented(doTestDocument = "Hello DOC with annotation")
+    @TestDocumented(doTestDocument = "codewarEtc.etc.Hello DOC with annotation")
     public void doSomeTestDocumented() {
         System.out.println("Test for annotation with 'Documented'");
     }
 
-    @TestNotDocumented(doTestNoDocument = "Hello DOC without annotation")
+    @TestNotDocumented(doTestNoDocument = "codewarEtc.etc.Hello DOC without annotation")
     public void doSomeTestNotDocumented() {
         System.out.println("Test for annotation without 'Documented'");
     }

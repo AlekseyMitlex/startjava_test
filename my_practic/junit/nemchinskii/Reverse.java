@@ -3,7 +3,7 @@ package junit.nemchinskii;
 public class Reverse {
 
     public static void main(String[] args) {
-        System.out.println(reverse("Hello World"));
+        System.out.println(reverse("codewarEtc.etc.Hello World"));
     }
 
     public static String reverse(String input) {

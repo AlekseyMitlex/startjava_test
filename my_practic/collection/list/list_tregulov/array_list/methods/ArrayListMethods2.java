@@ -1,4 +1,4 @@
-package collection.list.list_tregulov;
+package collection.list.list_tregulov.array_list.methods;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +8,7 @@ public class ArrayListMethods2 {
 
     public static void main(String[] args) {
 
-        // TODO : removeAll(Collection <?> c ) - boolean
+        //  removeAll(Collection <?> c ) - boolean
         //  Если мы хотим из 1-го ArrayList, удалить элементы второго
         ArrayList<String> aI1 = new ArrayList<>();
         aI1.add("one");
@@ -28,18 +28,18 @@ public class ArrayListMethods2 {
         System.out.println("aI1 = " + aI1);
 
         System.out.println(" =******************** ");
-        // TODO : retainAll(Collection <?> c ) - boolean
+        //  retainAll(Collection <?> c ) - boolean
         //  В 1-й ArrayList, остануться элементы, которых
         //  нет во втором так же
         aI1.retainAll(aI2);
         System.out.println("aI1 = " + aI1);
 
-        // TODO : containsAll(Collection <?> c ) - boolean
+        //  containsAll(Collection <?> c ) - boolean
         //  Сожержит ли первый ArrayList все элементы второго ArrayList`a
         boolean result = aI1.containsAll(aI2);
         System.out.println("result = " + result);
 
-        // TODO : sublist(int fromIndex, int toIndex) - List <E>
+        //  sublist(int fromIndex, int toIndex) - List <E>
         //  Создаёт отрывок из ArraList`a
         aI1.add("one");
         aI1.add("two");
@@ -58,7 +58,7 @@ public class ArrayListMethods2 {
         System.out.println("sublist = " + sublist);
         System.out.println("aI1 = " + aI1);
 
-        // TODO : toArray() - Object [] из АррейЛиста в массив объектов
+        //   toArray() - Object [] из АррейЛиста в массив объектов
         Object[] array = aI1.toArray();
         System.out.println("array = " + Arrays.toString(array));
         // Если хотим создать массив типа String.
@@ -66,7 +66,7 @@ public class ArrayListMethods2 {
         String[] array1 = aI1.toArray(new String[15]);
         System.out.println("array1 = " + Arrays.toString(array1));
 
-        // TODO : List.of(E.elements) - List<E>
+        //   List.of(E.elements) - List<E>
         //        List.copyOf(Collection <E>c) - List<E>
         // List.of(E.elements) - List<E>. т.о. Можно быстро создать лист.
         // Но изменять его НЕЛЬЗЯ

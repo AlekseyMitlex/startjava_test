@@ -6,8 +6,9 @@ public class LinkedHashMapEx {
 
     public static void main(String[] args) {
 
-        // TODO: Порядок по стандарту может быть false/tru,
-        //  где false - по добавлению, а true - последний используемый переходит в конец
+        //  - accessOrder указывает каким образом будет осуществляться доступ
+        //  к элементам при использовании итератора.
+        //      false - по добавлению, true - последний используемый переходит в конец
         LinkedHashMap<Double, Student> lhm =
                 new LinkedHashMap<>(16, 0.75f, true);
 

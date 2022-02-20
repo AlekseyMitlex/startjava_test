@@ -3,7 +3,7 @@ package collection.list.list_tregulov.linked_list;
 import java.util.LinkedList;
 
 public class LinkedListEx1 {
-    // TODO : Общий вывод
+    //  Общий вывод
     //  LinkedList - стоит использовать когда:
     //  get(поиск) по минимуму, а remove/add максимум потому,что
     //  просто меняются ссылки, массив не сдвигается.

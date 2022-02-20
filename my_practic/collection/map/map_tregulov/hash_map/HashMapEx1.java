@@ -5,6 +5,18 @@ import java.util.Map;
 
 public class HashMapEx1 {
 
+    // - Неупорядоченное хранение, ключи должны быть уникальными, может быть null
+    // - значения могут повторяться, могут быть null
+    // - put() за время O(1), новые элементы вставляются в начало цепочки
+    // - get() remove() за время O(1), если хэш-функция равномерно распределяет
+    //      элементы и отсутствуют коллизии
+
+    //  Размер массива и фактор при котором массив увеличиться вдвое,
+    //  в данном случае, при заполнении 12(16*0,75)
+    //  Чем больше capacity занимает памяти, тем быстрее будет поиск,
+    //  потому что меньше будут образовываться LinkeList`i в конкретной позиции.
+    //  Вывод: жертвуем памятью, но выигрываем в скорости доступа к элементу
+
     public static void main(String[] args) {
         Map<Students, Double> map = new HashMap<>();
         Map<Integer, String> map1 = new HashMap<>();
@@ -15,7 +27,16 @@ public class HashMapEx1 {
         map.put(st1, 7.5);
         map.put(st2, 8.7);
         map.put(st3, 9.5);
-        System.out.println(map);
+
+        // перебор HashMap в цикле Map.Entry entrySet()
+        // - Map.Entry обозначает “ключ-значение”
+        // - entrySet() возвращает список всех пар в нашей HashMap
+        //      (поскольку наша мапа состоит из пар-Entry, то мы
+        //      перебираем именно пары, а не отдельно ключи или значения)
+        System.out.println("\n" + "Перебор HashMap в цикле Map.Entry entrySet()");
+        for (Map.Entry<Students, Double> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
 
         Students st4 = new Students("Zaur", "Tregulov", 3);
         boolean result = map.containsKey(st4);

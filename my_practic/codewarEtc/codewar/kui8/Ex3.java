@@ -1,4 +1,4 @@
-package codewar.kui8;
+package codewarEtc.codewar.kui8;
 
 /*You were camping with your friends far away from home, but when
         it's time to go back, you realize that your fuel is running out

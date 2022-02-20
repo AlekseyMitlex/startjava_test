@@ -1,4 +1,6 @@
-public class Hello {
+package codewarEtc.etc;
+
+public class Zadacha1 {
 
 /*1. Вычесть аргументы x2 и x1.
   2. Вычесть аргументы y2 и y1.

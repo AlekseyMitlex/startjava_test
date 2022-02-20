@@ -29,7 +29,7 @@ public class Main {
         // Проверка на присутствие элемента в HashMap по значению
         System.out.println(passportsAndNames.containsValue("Дональд Джон Трамп"));
 
-        // TODO : Получение списка всех ключей и значений keySet() и values()
+        // Получение списка всех ключей и значений keySet() и values()
         // Вывод всех ключей
         Set<Integer> keys = passportsAndNames.keySet();
         System.out.println("Ключи: " + keys);
@@ -37,26 +37,26 @@ public class Main {
         ArrayList<String> values = new ArrayList<>(passportsAndNames.values());
         System.out.println("Значения: " + values);
 
-        // TODO : Получение списка количества ключей и чистка значений size() и clear()
+        // Получение списка количества ключей и чистка значений size() и clear()
         // Вывод всех количества ключей
         System.out.println(passportsAndNames.size());
         // Чистка значений
         passportsAndNames.clear();
         System.out.println(passportsAndNames + "\n");
 
-        // TODO : Создание заново ************
+        // Создание заново ************
         passportsAndNames.put(212133, "Лидия Аркадьевна Бубликова");
         passportsAndNames.put(162348, "Иван Михайлович Серебряков");
         passportsAndNames.put(8082771, "Дональд Джон Трамп");
         passportsAndNames.put(162348, "Виктор Михайлович Стычкин");
         System.out.println(passportsAndNames + "\n" + "************");
 
-        // TODO : Eсть ли в HashMap хотя бы один элемент isEmpty()
+        // Eсть ли в HashMap хотя бы один элемент isEmpty()
         if (!passportsAndNames.isEmpty()) {
             System.out.println("passportsAndNames = " + passportsAndNames);
         }
 
-        // TODO : Объединение двух мап в одну putAll()
+        // Объединение двух мап в одну putAll()
         HashMap<Integer, String> passportsAndNames2 = new HashMap<>();
         passportsAndNames2.put(917352, "Алексей Андреевич Ермаков");
         passportsAndNames2.put(925648, "Максим Олегович Архаров");
@@ -66,7 +66,11 @@ public class Main {
         passportsAndNames.putAll(passportsAndNames2);
         System.out.println(passportsAndNames);
 
-        // TODO : перебор HashMap в цикле Map.Entry entrySet()
+        // перебор HashMap в цикле Map.Entry entrySet()
+        // - Map.Entry обозначает “ключ-значение”
+        // - entrySet() возвращает список всех пар в нашей HashMap 
+        //      (поскольку наша мапа состоит из пар-Entry, то мы 
+        //      перебираем именно пары, а не отдельно ключи или значения)
         System.out.println("\n" + "Перебор HashMap в цикле Map.Entry entrySet()");
         for (Map.Entry entry : passportsAndNames.entrySet()) {
             System.out.println(entry);

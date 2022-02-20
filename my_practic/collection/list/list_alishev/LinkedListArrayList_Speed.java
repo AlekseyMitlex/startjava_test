@@ -27,7 +27,7 @@ public class LinkedListArrayList_Speed {
 //        long end = System.currentTimeMillis();
 //        System.out.println(end - start);
 
-        // add(index) Заполняем, значения ставим в конец листа 10 и 773
+        // add(index) Заполняем, значения ставим в середину листа 10 и 773
         long start2 = System.currentTimeMillis();
 
         for (int i = 0; i < 100000; i++) {

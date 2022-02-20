@@ -1,4 +1,4 @@
-package codewar.kui8;
+package codewarEtc.codewar.kui8;
 
 public class Ex4 {
 
