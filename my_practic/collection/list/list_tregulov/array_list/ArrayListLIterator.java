@@ -19,7 +19,7 @@ public class ArrayListLIterator {
         list1.add(s4);
         list1.add(s2);
 
-        // TODO : Вывести на экран элементы листа
+        //   Вывести на экран элементы листа
         // 1-q variant
         Iterator<String> it = list1.iterator();
         while (it.hasNext()) {
@@ -31,7 +31,7 @@ public class ArrayListLIterator {
             System.out.println("it1.next() = " + it1.next());
         }
 
-        // TODO : Вывести на экран элемент и удалить
+        //   Вывести на экран элемент и удалить
         Iterator<String> it2 = list1.iterator();
         while (it2.hasNext()) {
             it2.next();

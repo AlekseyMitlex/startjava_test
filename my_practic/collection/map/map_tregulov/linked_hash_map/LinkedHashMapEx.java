@@ -6,7 +6,7 @@ public class LinkedHashMapEx {
 
     public static void main(String[] args) {
 
-        //  - accessOrder указывает каким образом будет осуществляться доступ
+        //  accessOrder указывает каким образом будет осуществляться доступ
         //  к элементам при использовании итератора.
         //      false - по добавлению, true - последний используемый переходит в конец
         LinkedHashMap<Double, Student> lhm =

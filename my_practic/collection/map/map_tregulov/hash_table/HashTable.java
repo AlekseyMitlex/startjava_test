@@ -4,7 +4,7 @@ import java.util.Hashtable;
 
 public class HashTable {
 
-    // TODO : Устарел, использовать HashMap
+    //  Устарел, использовать HashMap
     //  Ни ключ ни значение, не могут быть null
     //  Многопоточен, но т.к. устарел используется ConcurrentHashMap
     public static void main(String[] args) {
