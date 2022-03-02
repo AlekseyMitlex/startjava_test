@@ -60,6 +60,9 @@ public class HashMapMethods {
             System.out.println("entry.getKey() + \":\" + entry.getValue() = " + entry.getKey() + ":" + entry.getValue());
         }
 
+        map1.size();
+        System.out.println("map1.size() = " + map1.size());
+
 
     }
 }
