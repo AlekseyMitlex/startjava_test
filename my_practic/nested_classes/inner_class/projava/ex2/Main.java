@@ -1,4 +1,4 @@
-package nested_classes.inner_class.ex2;
+package nested_classes.inner_class.projava.ex2;
 
 public class Main {
 

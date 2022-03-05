@@ -1,5 +1,6 @@
-package nested_classes.inner_class.ex1;
+package nested_classes.inner_class.projava.ex1;
 
+//http://pr0java.blogspot.com/2015/08/4.html
 public class OuterClass {
 
     private int outInt = 10;

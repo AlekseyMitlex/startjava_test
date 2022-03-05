@@ -1,4 +1,4 @@
-package nested_classes.local_inner_class;
+package nested_classes.local_inner_class.ex1;
 
 public class LocalInner1 {
 

@@ -1,4 +1,4 @@
-package nested_classes.inner_class.ex3;
+package nested_classes.inner_class.projava.ex3;
 
 interface ISelector {
 
