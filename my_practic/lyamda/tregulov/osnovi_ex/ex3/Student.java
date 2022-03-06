@@ -1,4 +1,4 @@
-package lyamda.tregulov.ex3;
+package lyamda.tregulov.osnovi_ex.ex3;
 
 import java.util.ArrayList;
 

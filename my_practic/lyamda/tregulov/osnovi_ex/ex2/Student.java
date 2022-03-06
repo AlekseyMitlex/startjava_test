@@ -1,4 +1,4 @@
-package lyamda.tregulov.ex2;
+package lyamda.tregulov.osnovi_ex.ex2;
 
 import java.util.ArrayList;
 
@@ -30,7 +30,7 @@ class StudentInfo {
     // Можно вставить любой объект который implements`ирует интерфейс StudentCheks
     void testStudents(ArrayList<Student> aL, StudentCheks sc) {
         for (Student s : aL) {
-            if (sc.testStudent(s)) {
+            if (sc.test(s)) {
                 printStudent(s);
             }
         }
@@ -72,41 +72,41 @@ class StudentInfo {
 }
 
 interface StudentCheks {
-    boolean testStudent(Student s);
+    boolean test(Student s);
 }
 
 class FindStudentsOverGrade implements StudentCheks {
-    public boolean testStudent(Student s) {
+    public boolean test(Student s) {
         return s.avgGrade > 8.5;
     }
 }
 
 class FindStudentsUnderGrade implements StudentCheks {
-    public boolean testStudent(Student s) {
+    public boolean test(Student s) {
         return s.avgGrade < 9;
     }
 }
 
 class FindStudentsOverAge implements StudentCheks {
-    public boolean testStudent(Student s) {
+    public boolean test(Student s) {
         return s.age > 25;
     }
 }
 
 class FindStudentsUnderAge implements StudentCheks {
-    public boolean testStudent(Student s) {
+    public boolean test(Student s) {
         return s.age > 27;
     }
 }
 
 class FindStudentsBySex implements StudentCheks {
-    public boolean testStudent(Student s) {
+    public boolean test(Student s) {
         return s.sex == 'm';
     }
 }
 
 class FindStudentsMixCondition implements StudentCheks {
-    public boolean testStudent(Student s) {
+    public boolean test(Student s) {
         return (s.avgGrade > 7.2 && s.age < 23 && s.sex == 'f');
     }
 }

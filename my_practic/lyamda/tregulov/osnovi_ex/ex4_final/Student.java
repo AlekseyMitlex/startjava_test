@@ -1,10 +1,11 @@
-package lyamda.tregulov.ex4_final;
+package lyamda.tregulov.osnovi_ex.ex4_final;
 
 import java.util.ArrayList;
 import java.util.function.Predicate;
 
-// - Решение примера через lyamda c использованием родных интерфейсов interface Predicate
+// - Решение примера через lyamda c использованием родных интерфейсов
 //      Predicate(interface Function) задачи ex1-ex2-ex4
+// interface Predicate - сравнивает объект типа Т
 public class Student {
 
     String name;
