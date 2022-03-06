@@ -23,7 +23,7 @@ public class LyamdaMethods {
         al.add(6);
         al.add(1);
 
-        // Lyamda - Predicate - удаляет элементы, подходящие нашему условию
+        // Lyamda - Predicate - удаляет элементы, подходящие нашему условию11
         // 1-й вариант
         al.removeIf(element -> element % 3 == 0);
         System.out.println("al = " + al);
