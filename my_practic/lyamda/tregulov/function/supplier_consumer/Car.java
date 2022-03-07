@@ -1,11 +1,10 @@
-package lyamda.tregulov.supplier_customer;
+package lyamda.tregulov.function.supplier_consumer;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 // interface Supplier - возвращает объект типа Т
-// interface Customer - принимает параметр типа Т
 public class Car {
 
     String model;
@@ -30,6 +29,7 @@ public class Car {
 
 class Test10 {
 
+    // Метод который создаёт 3 машины
     public static ArrayList<Car> createThreeCars(Supplier<Car> carSupplier) {
         ArrayList<Car> al = new ArrayList<>();
         for (int i = 0; i < 3; i++) {
@@ -38,34 +38,32 @@ class Test10 {
         return al;
     }
 
-    // 2 варианта вызова consumer.accept
-    // 1-й
-/*
+    // Метод который меняет машину consumer.accept
     public static void changeCar(Car car, Consumer<Car> consumer) {
         consumer.accept(car);
-}*/
+    }
 
     public static void main(String[] args) {
-        ArrayList<Car> ourCars = createThreeCars(() -> new Car("Nissan Tilda", "silver metalic", 1.6));
-        System.out.println("ourCars = " + ourCars);
+        ArrayList<Car> ourCar = createThreeCars(() ->
+                new Car("Nissan Tilda", "silver metalic", 1.6));
+        System.out.println("ourCarSuppliers = " + ourCar);
 
-/*
-        changeCar(ourCars.get(0), car -> {
+        // 1-й способ Consumer с методом
+        changeCar(ourCar.get(0), car -> {
             car.color = "red";
             car.engine = 2.4;
             System.out.println("updater car = " + car);
         });
-        System.out.println("ourCars = " + ourCars);
-*/
+        System.out.println("ourCar = " + ourCar);
 
-        // 2-й. Короче и понятней, без метода
+        // 2-й Consumer без метода
         Consumer<Car> consumer = car -> {
             car.color = "red";
             car.engine = 2.4;
             System.out.println("updater car = " + car);
         };
-        consumer.accept(ourCars.get(0));
-        System.out.println("ourCars = " + ourCars);
+        consumer.accept(ourCar.get(0));
+        System.out.println("ourCar = " + ourCar);
 
     }
 }

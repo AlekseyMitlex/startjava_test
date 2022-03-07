@@ -63,25 +63,20 @@ class StudentInfo {
         });
         System.out.println("-----------------------------------");
 
-        // Самый короткий вариант написания
-        si.testStudents(list, st -> st.age > 27);
+        // Средний вариант
+        si.testStudents(list, (Student st) -> st.course > 1);
         System.out.println("-----------------------------------");
 
-        // 3-й способ Анонимный класс по сути, тоже самое
+        // Короткий вариант
+        si.testStudents(list, st -> st.age > 27);
+
+        // Анонимный класс по сути, тоже самое
         si.testStudents(list, new Predicate<Student>() {
             @Override
             public boolean test(Student st) {
                 if (st.sex == 'f') return true;
                 else return false;
             }
-        });
-        System.out.println("-----------------------------------");
-
-        // Средний вариант написания
-        si.testStudents(list, (Student st) -> st.course > 1);
-        System.out.println("-----------------------------------");
-        si.testStudents(list, (Student st) -> {
-            return st.name.equals("Petr");
         });
         System.out.println("-----------------------------------");
         si.testStudents(list, (Student st) -> st.avgGrade > 7.2 && st.age < 23 && st.sex == 'f');
