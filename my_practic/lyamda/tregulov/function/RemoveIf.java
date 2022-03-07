@@ -1,4 +1,4 @@
-package lyamda.tregulov.function.predicate;
+package lyamda.tregulov.function;
 
 import java.util.ArrayList;
 import java.util.function.Predicate;
