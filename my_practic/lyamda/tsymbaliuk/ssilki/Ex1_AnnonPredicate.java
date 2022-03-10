@@ -1,4 +1,4 @@
-package lyamda.tsymbaliuk;
+package lyamda.tsymbaliuk.ssilki;
 
 import java.util.ArrayList;
 import java.util.List;

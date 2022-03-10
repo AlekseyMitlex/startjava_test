@@ -1,4 +1,4 @@
-package lyamda.tsymbaliuk.ex3_ssilkinaconstructor;
+package lyamda.tsymbaliuk.ssilki.ex3_ssilkinaconstructor;
 
 // Функциональный интерфейс - пример с одним нереализованным методом с
 //      Object значением, параметров у которого нет

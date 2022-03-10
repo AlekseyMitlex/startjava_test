@@ -1,4 +1,4 @@
-package lyamda.tsymbaliuk.ex4_obobshenii_functuion_interface;
+package lyamda.tsymbaliuk.ssilki.ex4_obobshenii_functuion_interface;
 
 // Класс с 3 перегруженными методами
 // Формально, каждый метод подходит под реализацию функционального обобщенного интерфейса

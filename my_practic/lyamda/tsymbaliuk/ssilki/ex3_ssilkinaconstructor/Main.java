@@ -1,4 +1,4 @@
-package lyamda.tsymbaliuk.ex3_ssilkinaconstructor;
+package lyamda.tsymbaliuk.ssilki.ex3_ssilkinaconstructor;
 
 import java.util.ArrayList;
 import java.util.Arrays;

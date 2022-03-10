@@ -1,4 +1,4 @@
-package lyamda.tsymbaliuk.ex2_ssilkinametodi;
+package lyamda.tsymbaliuk.ssilki.ex2_ssilkinametodi;
 
 // ВАЖНО: класс не реализует указанный интерфейс
 public class SimpleGen {

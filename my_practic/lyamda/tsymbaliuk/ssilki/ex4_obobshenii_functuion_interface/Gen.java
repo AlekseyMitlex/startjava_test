@@ -1,4 +1,4 @@
-package lyamda.tsymbaliuk.ex4_obobshenii_functuion_interface;
+package lyamda.tsymbaliuk.ssilki.ex4_obobshenii_functuion_interface;
 
 // Наоборот - в качестве реализации используется ссылка на обобщенный метод
 public class Gen {
