@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class Ex1 {
+// Пример использования анонимного класса и Предикатора
+public class Ex1_AnnonPredicate {
 
     public static void main(String[] args) {
         List<String> list = new ArrayList<>(List.of("hello", "cat", "java", "bag"));
