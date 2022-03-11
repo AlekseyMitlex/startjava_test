@@ -1,4 +1,4 @@
-package lyamda.tsymbaliuk.lyamda.ex1;
+package lyamda.tsymbaliuk.lyamda.ex1_osnovi;
 
 // ФИ принимает стринг и на выходе стринг
 // Лямда функция - анонимная функция реализующая функциональный интерфейс,

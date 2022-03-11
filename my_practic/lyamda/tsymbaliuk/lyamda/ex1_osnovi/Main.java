@@ -1,4 +1,4 @@
-package lyamda.tsymbaliuk.lyamda.ex1;
+package lyamda.tsymbaliuk.lyamda.ex1_osnovi;
 
 import java.util.Locale;
 
