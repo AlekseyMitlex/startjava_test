@@ -6,8 +6,8 @@ import java.util.Random;
 
 public class Team<T extends Participant> {
 
-    private String name;
-    private List<T> participants = new ArrayList<>();
+    private final String name;
+    private final List<T> participants = new ArrayList<>();
 
     public Team(String name) {
         this.name = name;

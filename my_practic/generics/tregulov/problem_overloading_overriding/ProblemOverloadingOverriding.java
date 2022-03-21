@@ -15,7 +15,7 @@ public class ProblemOverloadingOverriding {
         System.out.println(i);
     }
 
-    // TODO : JVM не видит <String> и <Integer> у Overloading methods
+    // JVM не видит <String> и <Integer> у Overloading methods
     // существует такая проблема у Overloading methods
 //    public void abc(info1<String> info1) {
 //        String j = info1.getValue();
@@ -53,7 +53,7 @@ class Parent {
 
 class Child extends Parent {
 
-    // TODO : JVM не видит <String> и <Integer> у  Overriding methods
+    // JVM не видит <String> и <Integer> у  Overriding methods
     // существует такая проблема у  Overriding methods
 //    public void abc(info1<Integer> info1) {
 //        Integer k = info1.getValue();

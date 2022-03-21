@@ -1,22 +1,19 @@
-public class Person implements Runnable {
+import java.util.ArrayList;
+import java.util.List;
 
-    public void run() {
-        for (int i = 0; i < 1000; i++)
-            doWork();
-    }
+public class Person {
 
-    private static void doWork() {
+    public static double sum(List<Number> list) {
+        double sum = 0;
+        for (Number n : list) {
+            sum += n.doubleValue();
+        }
+        return sum;
     }
 
     public static void main(String[] args) {
-
-        Runnable runnable = () -> {
-            for (int i = 0; i < 1000; i++)
-                doWork();
-        };
-
-        Person r = new Person();
-        new Thread(r).start();
-
+        List<Number> list = new ArrayList<>();
+        list.add(5);
+        list.add(10.5);
     }
 }

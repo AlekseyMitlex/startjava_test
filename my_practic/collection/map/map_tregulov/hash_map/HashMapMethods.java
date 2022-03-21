@@ -62,7 +62,5 @@ public class HashMapMethods {
 
         map1.size();
         System.out.println("map1.size() = " + map1.size());
-
-
     }
 }

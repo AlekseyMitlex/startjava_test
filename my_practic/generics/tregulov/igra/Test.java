@@ -18,14 +18,14 @@ public class Test {
         Team<Schoolar> schoolarTeam2 = new Team("Mudreci");
         Team<Student> studentTeam = new Team("Vpered");
         Team<Employee> employeeTeam = new Team("Rabotyagi");
-        // TODO: с помощью дженерик запретили создавать любые команды
+        // с помощью дженерик запретили создавать любые команды
 //        Team<String> stringTeam = new Team("Fantasia");
         schoolarTeam.addParticipant(schoolar1);
         schoolarTeam.addParticipant(schoolar2);
         schoolarTeam.addParticipant(schoolar3);
         schoolarTeam.addParticipant(schoolar4);
 
-        // TODO: с помощью дженерик запретили мешать команды
+        // с помощью дженерик запретили мешать команды
 //        schoolarTeam.addParticipant(student1);
 //        schoolarTeam.addParticipant(employee2);
 
@@ -37,7 +37,7 @@ public class Test {
 
         schoolarTeam.playWith(schoolarTeam2);
 
-        // TODO: с помощью дженерик запретили играть командам разной категории
+        // с помощью дженерик запретили играть командам разной категории
         schoolarTeam.playWith(schoolarTeam2);
 
 

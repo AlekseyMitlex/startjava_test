@@ -38,7 +38,7 @@ public class Test4 {
         list4.add("ok");
         showListInfo(list4);
 
-        // TODO : bounded wildcards
+        // bounded wildcards
         // Integer можно реализовывать наследников,
         // String в этом случае нельзя
         List<? extends Number> list30 = new ArrayList<Integer>();
